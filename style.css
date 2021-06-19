@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #616161;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    /* padding: 10px; */
+}
+
+.dottedHR{
+    border: dotted 6px #616161;
+    border-bottom: none;
+    margin: 10px auto;
+    width: 90px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aca_building.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* Navigation Section Started */
+
+nav{
+    /* background: #1b1b1b; */
+    background-image: linear-gradient(to left, #ff0a6c, #4a3cdb);
+    /* background-image: linear-gradient(to left, #a52cdf, #106ad2); */
+
+}
+nav::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav .logo{
+    float: left;
+    padding: 10px 60px;
+}
+nav .logo img{
+    width: 90px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+
+    top: 5px;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    /* background: #1b1b1b; */
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff,
+                0 0 10px #fff;
+}
+
+nav ul ul li a:hover{
+    /* color: #ff0a6c; */
+    box-shadow: none;
+    text-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+
+
+nav ul ul{
+    position: absolute;
+    top: 100px;
+    border-top: 3px solid #ff0a6c;    
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul ul li{
+    background-image: linear-gradient(to left, #ff0a6c, #4a3cdb);
+}
+
+nav ul ul ul{
+    border-top: none;
+}
+
+nav ul li:hover > ul{
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 160px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a{
+    line-height: 40px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -80px;
+    left: 160px;
+    width: 270px;
+}
+
+.fa-caret-right{
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+
+.show, .icon, nav input{
+    display: none;
+}
+/* -------------Navigation Section Ended --------------*/
+
+
+
+
+/* .textBox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+.textBox{
+    color: #fff;
+    text-align: center;
+    /* margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 50px; */
+    margin: 200px 50px;
+    width: 60%;
+}
+
+.textBox h1{
+    font-size: 55px;
+}
+.textBox p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.heroBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.heroBtn:hover{
+    border: 1px solid #ff0a6c;
+    background: #ff0a6c;
+    transition: 1s;
+}
+
+
+
+
+
+/* Course Design Started */
+
+.course{
+    width: 100%;
+    margin: auto;
+    /* text-align: center; */
+    padding-top: 80px;
+}
+.course h1{
+    text-align: center;
+}
+
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.courseCol{
+    flex-basis: 31%;
+    background-image: linear-gradient(to right, #ccc, gray);
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.cardIco{
+    text-align: center;
+}
+.cardIco img{
+    margin-top: 20px;
+    width: 100px;
+}
+.roundedIMG{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    /* padding: 5px; */
+    background-color: white;
+} 
+
+.courseCol h3{
+    background: #616161;
+    /* height: auto; */
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 10px;
+}
+.courseCol .cardDesc{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    line-height: 25px;
+}
+.cardDesc a{
+    text-decoration: none;
+}
+
+.cardDesc .heroBtn{
+    background: #ff0a6c;
+}
+.cardDesc .heroBtn:hover{
+    border: 1px solid #fff;
+    background: #4a3cdb;
+}
+.courseCol:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+/* Course Design Ended */
+
+
+
+/* We have design Started */
+
+.weHave{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* We have design Ended */
+
+
+/* Call to action section Started */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/ec_lab.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 80px 200px;
+    box-sizing: border-box;
+}
+.cta h1{
+    color: #fff;
+    /* margin-bottom: 40px; */
+    padding: 0;
+}
+.cta p{
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Call to action section Ended */
+
+
+/* Feedback section Started */
+
+.Feedback{
+    width: 30%;
+    margin: 0 10%;
+}
+
+/* Feedback section Ended */
+
+
+/* Footer section Started */
+
+.footer{
+    width: 70%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    /* background: #4a3cdb; */
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fab{
+    color: #ff0a6c;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #ff0a6c;
+}
+
+/* Footer section Ended */
+
+
+
+
+
+
+/* -------About Page Started------- */
+
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/AboutIMG.png);
+    background-position: center;
+    background-size: cover;
+    /* text-align: center; */
+    color: #fff;
+}
+.libr{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/libraryBooks.png);
+}
+.sub-header h1{
+    margin-top: 100px;
+    text-align: center;
+}
+.aboutUs{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutCol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.aboutCol img{
+    width: 100%;
+}
+.aboutCol h1{
+    padding-top: 0;
+}
+.aboutCol p{
+    padding: 15px 0 25px;
+}
+.redBtn{
+    border: 1px solid #ff0a6c;
+    background: transparent;
+    color: #ff0a6c;
+}
+.redBtn:hover{
+    color: #fff;
+}
+
+
+/* -------About Page Ended------- */
+
+
+
+
+
+/* -------Contact Page Started-------- */
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contactUs{
+    width: 80%;
+    margin: auto;
+}
+.contactCol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactCol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contactCol div .fa{
+    font-size: 28px;
+    color: #ff0a6c;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contactCol div .far{
+    font-size: 28px;
+    color: #ff0a6c;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contactCol div p{
+    padding: 0;
+}
+.contactCol div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contactCol input, .contactCol textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+textarea{
+    resize: vertical;
+}
+
+/* -------Contact Page Ended-------- */
+
+
+
+
+/* --------Table Design Started-------- */
+
+table{
+    border: 1px solid #616161;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+th, td{
+    border: 1px solid #616161;
+    padding: 5px;
+}
+th{
+    background: #ff0a6c;
+    color: #fff;
+}
+.secTable{
+    text-align: center;
+}
+table caption{
+    font-weight: bold;
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 30px;
+}
+tr:nth-child(even){
+    background-color: #ccc;
+}
+tr:nth-child(odd){
+    background-color: #fff;
+}
+tr:hover{
+    background-color: #ff7676;
+}
+.FacultyP{
+    width: auto;
+    margin: 40px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+/* --------Table Design Started-------- */
+
+
+/*--------- Result Record Started -----------*/
+
+.container{
+    padding: 1% 0%;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+}
+.rcard{
+    /* background: linear-gradient(to top, #ff8b51, #e05ba2, #cd4bc9); */
+    background-image: linear-gradient(to bottom, #ff0a6c, #4a3cdb);
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    width: 32%;
+    margin: 10px .6%;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.rcard:hover{
+    box-shadow: 0px 0px 5px 0px black;
+}
+.rcard .rtxt{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.rcard h3{
+    background-color: #555;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+.rcard .heroBtn{
+    background: #fff;
+    color: #ff0a6c;
+    border: 1px solid #ff0a6c;
+}
+.rcard .heroBtn:hover{
+    border: 1px solid #ff0a6c;
+    background: #ff0a6c;
+    color: #fff;
+    box-shadow: 0px 0px 3px black;
+}
+.container::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/*--------- Result Record Ended ------------*/
+
+
+/*--------- 1stop page started ------------*/
+
+.oneHstop{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/oneLab.png);
+}
+
+.OneForm{
+    margin-top: 50px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 30px;
+}
+.directMail{
+    margin: 0 auto;
+    padding: 120px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.directMail p{
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*--------- 1stop page ended ------------*/

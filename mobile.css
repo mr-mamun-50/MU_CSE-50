@@ -1,0 +1,122 @@
+nav ul{
+    margin-right: 0px;
+    float: left;
+    top: 0;
+}
+nav ul li a{
+    line-height: 40px;
+}
+nav .logo{
+    padding-left: 30px;
+}
+nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+    background: none;
+}
+nav ul ul{
+    top: 70px;
+    position: static;
+    border-top: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+}    
+nav ul ul ul li {
+    position: static;
+    width: 100%;
+}
+    
+nav ul ul a, nav ul ul li .show {
+    padding-left: 40px;
+}    
+nav ul ul ul a {
+    padding-left: 80px;
+}
+
+.Feedback{
+    width: 80%;
+}
+   
+.show{
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.show:hover{
+    /* color: #ff0a6c; */
+    text-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+
+.icon{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+    top: 5px;
+}
+
+nav ul li a:hover{
+    box-shadow: none;
+}
+
+.show + a, ul{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+
+.textBox{
+    color: #fff;
+    text-align: center;
+    margin-top: 140px;
+    margin-left: 55px;
+    /* margin: 55px auto; */
+    width: 250px;
+}
+
+.textBox h1{
+    font-size: 24px;
+}
+.textBox p{
+    font-size: 13px;
+}
+
+
+
+.row{
+    flex-direction: column;
+}
+
+
+/* Call to action section Started */
+
+.cta{
+    
+    padding: 60px 20px;
+}
+.cta h1{
+    font-size: 24px;
+}
+
+/* Call to action section Ended */
+
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.directMail{
+    padding: 30px;
+}
