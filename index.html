@@ -20,7 +20,7 @@
         rel="stylesheet">
 
     <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <!-- OwlCarousel2 CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -386,16 +386,34 @@
     </div>
 
 
+
     <script>
         $(".slider").owlCarousel({
+            margin: 10,
             loop: true,
             autoplay: true,
             autoplayTimeout: 2000, //2000ms = 2s
             autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
         });
     </script>
 
     <!-- Tutorial view ended -->
+
+
 
 
     <!-- We have section Started-->
