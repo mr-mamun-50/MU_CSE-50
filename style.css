@@ -4,6 +4,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body{
+    display: grid;
+    height: 100%;
+    /* place-items: center; */
+    /* text-align: center; */
+    /* background: #f2f2f2; */
+}
+
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -58,6 +66,9 @@ nav{
     /* background-image: linear-gradient(to right, #001B48, #00a8ad); */
 
 }
+nav .fas{
+    color: #00bbc2;
+}
 nav::after{
     content: '';
     display: table;
@@ -95,8 +106,8 @@ nav ul li a{
 nav ul li a:hover{
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 10px #fff,
-                0 0 10px #fff;
+    box-shadow: 0 0 10px #00bbc2,
+                0 0 10px #00bbc2;
 }
 
 nav ul ul li a:hover{
@@ -211,7 +222,7 @@ nav ul ul ul li{
 .heroBtn:hover{
     border: 1.5px solid #00a8ad;
     background: #00a8ad;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -244,6 +255,7 @@ nav ul ul ul li{
     margin: 10px;
     margin-bottom: 5%;
     padding: 20px 0px;
+    min-width: 300px;
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -293,6 +305,55 @@ nav ul ul ul li{
 }
 
 /* Course Design Ended */
+
+
+
+/* tutorial view started */
+
+
+.slider{
+    max-width: 1100px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+.slider .crd{
+    background: #ccc;
+    flex: 1;
+    margin: 0 10px;
+}
+.slider .crd .img{
+    height: 200px;
+    width: 100%;
+}
+.slider .crd .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider .crd .cont{
+    padding: 10px 20px;
+}
+.slider .crd .cont .ttl{
+    font-size: 25px;
+    font-weight: 600;
+}
+.slider .crd .cont .sub-ttl{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+.crd .cont p{
+    text-align: justify;
+    margin: 10px 0;
+}
+.crd .cont .heroBtn:hover{
+    transform: scale(0.9);
+}
+
+
+/* tutorial view started */
 
 
 
@@ -625,7 +686,8 @@ tr:hover{
 /* ----------Programming Tutorial Started--------- */
 
 .proTuto{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/oneLab.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ptutohead.jpg);
 }
+
 
 /* ----------Programming Tutorial Ended--------- */
