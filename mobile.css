@@ -1,6 +1,11 @@
 h1{
     font-size: 28px;
 }
+
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homeHeader.jpg);
+}
+
 nav .fas{
     margin-right: 5px;
 }

@@ -55,8 +55,8 @@ p{
 nav{
     /* background: #1b1b1b; */
     /* background-image: linear-gradient(to left, #ff0a6c, #4a3cdb); */
-    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8));
     /* background-image: linear-gradient(to right, #001B48, #00a8ad); */
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8));
 
 }
 nav .fas{
@@ -121,7 +121,7 @@ nav ul ul{
 }
 
 nav ul ul li{
-    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8));
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9));
     /* background-image: linear-gradient(to right, #001B48, #00a8ad); */
     /* background-image: linear-gradient(to left, #ff0a6c, #4a3cdb); */
 }
