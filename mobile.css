@@ -1,3 +1,6 @@
+h1{
+    font-size: 28px;
+}
 nav .fas{
     margin-right: 5px;
 }
@@ -96,17 +99,14 @@ nav ul li a:hover{
     font-size: 13px;
 }
 
-
-
 .row{
     flex-direction: column;
 }
 
-
 /* Call to action section Started */
 
 .cta{
-    
+    /* width: 80%; */
     padding: 60px 20px;
 }
 .cta h1{
@@ -115,6 +115,23 @@ nav ul li a:hover{
 
 /* Call to action section Ended */
 
+/* contact page started */
+
+.contactCol div .fa{
+    font-size: 20px;
+    margin: 5px;
+    margin-right: 20px;
+}
+.contactCol div .far{
+    font-size: 20px;
+    margin: 5px;
+    margin-right: 20px;
+}
+.contactCol div h5{
+    font-size: 15px;
+}
+
+/* contact page ended */
 
 [class*="col-"] {
     width: 100%;

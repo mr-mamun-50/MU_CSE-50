@@ -218,7 +218,11 @@ nav ul ul ul li{
     transition: 0.5s;
 }
 
-
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
@@ -227,23 +231,16 @@ nav ul ul ul li{
 .course{
     width: 100%;
     margin: auto;
-    /* text-align: center; */
     padding-top: 80px;
 }
 .course h1{
     text-align: center;
+    color: #001B48;
     background: #F9F9F9;
-}
-
-.row{
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
 }
 .courseCol{
     flex-basis: 31%;
     background-image: linear-gradient(to bottom, #001B48, #00bbc2);
-    /* background-image: linear-gradient(to right, #ccc, gray); */
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 5%;
@@ -255,20 +252,8 @@ nav ul ul ul li{
 .cardIco{
     text-align: center;
 }
-.cardIco img{
-    margin-top: 20px;
-    width: 100px;
-}
-.roundedIMG{
-    border: 5px solid #fff;
-    border-radius: 50%;
-    /* padding: 5px; */
-    background-color: white;
-} 
-
 .courseCol h3{
     background: #616161;
-    /* height: auto; */
     color: #fff;
     text-align: center;
     font-weight: 600;
@@ -286,15 +271,13 @@ nav ul ul ul li{
     color: #fff;
 }
 
-/* .cardDesc .heroBtn{
-    background: #ff0a6c;
-} */
 .cardDesc .heroBtn:hover{
-    border: 1px solid #fff;
+    border: 1px solid #001B48;
     background: #001B48;
+    transform: scale(0.9);
 }
 .courseCol:hover{
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px #555;
 }
 
 /* Course Design Ended */
@@ -303,7 +286,12 @@ nav ul ul ul li{
 
 /* tutorial view started */
 
-
+.tutorials{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    color: #001B48;
+}
 .slider{
     max-width: 1100px;
     display: flex;
@@ -314,6 +302,7 @@ nav ul ul ul li{
     background: #ccc;
     flex: 1;
     margin: 0 10px;
+    border-radius: 10px;
 }
 .slider .crd .img{
     height: 200px;
@@ -323,16 +312,17 @@ nav ul ul ul li{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 .slider .crd .cont{
     padding: 10px 20px;
 }
 .slider .crd .cont .ttl{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
 .slider .crd .cont .sub-ttl{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #e74c3c;
     line-height: 20px;
@@ -341,10 +331,30 @@ nav ul ul ul li{
     text-align: justify;
     margin: 10px 0;
 }
+.crd .cont .heroBtn{
+    margin-top: 7px;
+}
 .crd .cont .heroBtn:hover{
     transform: scale(0.9);
 }
-
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 11px;
+    width: 11px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 1.5px solid #00a8ad!important;
+    transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active{
+    background: #00a8ad!important;
+}
 
 /* tutorial view started */
 
@@ -392,7 +402,7 @@ nav ul ul ul li{
 /* Feedback section Started */
 
 .Feedback{
-    width: 30%;
+    width: 35%;
     margin: 0 10%;
 }
 

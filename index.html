@@ -219,12 +219,13 @@
         <h1>Current Courses</h1>
         <hr class="dottedHR">
 
-        <div class="row">
+        <div class="slider owl-carousel">
 
             <div class="courseCol">
 
                 <div class="cardIco">
-                    <img class="roundedIMG" src="images/cpu.png" alt="edu Icon">
+                    <img class="roundedIMG" src="images/cpu.png" alt="edu Icon"
+                        style="height: 150px; width: 150px; border: 5px solid #fff; border-radius: 50%; background-color: white; margin: 0 auto;">
                 </div>
 
                 <h3>Basic Electronics Engineering</h3>
@@ -249,7 +250,8 @@
             <div class="courseCol">
 
                 <div class="cardIco">
-                    <img class="roundedIMG" src="images/matrix.png" alt="edu Icon">
+                    <img class="roundedIMG" src="images/matrix.png" alt="edu Icon"
+                        style="height: 150px; width: 150px; border: 5px solid #fff; border-radius: 50%; background-color: white; margin: 0 auto;">
                 </div>
 
                 <h3>Matrix, CV & Fourier Analysis</h3>
@@ -274,7 +276,8 @@
             <div class="courseCol">
 
                 <div class="cardIco">
-                    <img class="roundedIMG" src="images/calculator.png" alt="edu Icon">
+                    <img class="roundedIMG" src="images/calculator.png" alt="edu Icon"
+                        style="height: 150px; width: 150px; border: 5px solid #fff; border-radius: 50%; background-color: white; margin: 0 auto;">
                 </div>
 
                 <h3>Discreate Mathematics</h3>
@@ -299,7 +302,8 @@
             <div class="courseCol">
 
                 <div class="cardIco">
-                    <img class="roundedIMG" src="images/project-management.png" alt="edu Icon">
+                    <img class="roundedIMG" src="images/project-management.png" alt="edu Icon"
+                        style="height: 150px; width: 150px; border: 5px solid #fff; border-radius: 50%; background-color: white; margin: 0 auto;">
                 </div>
 
                 <h3>Project 200</h3>
@@ -328,13 +332,19 @@
 
     <!-- Tutorial view started -->
 
+    <div class="tutorials">
+        <h1> Tutorials </h1>
+        <hr class="dottedHR">
+    </div>
     <div class="slider owl-carousel">
         <div class="crd">
             <div class="img"><img src="images/programming.jpg" alt=""></div>
             <div class="cont">
                 <div class="ttl">Programming</div>
                 <div class="sub-ttl">Learn Programming</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -343,7 +353,9 @@
             <div class="cont">
                 <div class="ttl">Web Development</div>
                 <div class="sub-ttl">Learn Web Development</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -352,7 +364,9 @@
             <div class="cont">
                 <div class="ttl">UI/UX Design</div>
                 <div class="sub-ttl">Learn UI/UX Design</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -361,7 +375,9 @@
             <div class="cont">
                 <div class="ttl">Android App</div>
                 <div class="sub-ttl">Learn Android Development</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -370,7 +386,9 @@
             <div class="cont">
                 <div class="ttl">Graphic Design</div>
                 <div class="sub-ttl">Learn Graphic Design</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -379,7 +397,9 @@
             <div class="cont">
                 <div class="ttl">Core Courses Tutorial</div>
                 <div class="sub-ttl">CSE Courses</div>
-                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea, ipsum at sit.</p>
+                <p>Nonumy lorem accusam invidunt et eirmod ut takimata diam vero kasd, sadipscing amet duo et vero ea,
+                    ipsum at sit.</p>
+                <hr>
                 <a href="" class="heroBtn redBtn"> Explore </a>
             </div>
         </div>
@@ -388,22 +408,22 @@
 
 
     <script>
-        $(".slider").owlCarousel({
+        $(".slider,.row").owlCarousel({
             margin: 10,
             loop: true,
             autoplay: true,
             autoplayTimeout: 2000, //2000ms = 2s
             autoplayHoverPause: true,
             responsive: {
-                0:{
+                0: {
                     items: 1,
                     nav: false
                 },
-                600:{
+                600: {
                     items: 2,
                     nav: false
                 },
-                1000:{
+                1000: {
                     items: 3,
                     nav: false
                 }
