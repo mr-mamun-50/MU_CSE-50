@@ -629,6 +629,7 @@ tr:hover{
     padding: 20px;
     text-align: center;
     line-height: 30px;
+    min-height: 200px;
 }
 .rcard h3{
     background-color: #555;
@@ -637,14 +638,14 @@ tr:hover{
 }
 .rcard .heroBtn{
     background: #fff;
-    color: #001B48;
-    border: 1.5px solid #001B48;
+    color: #00a8ad;
+    border: 1.5px solid #00a8ad;
 }
 .rcard .heroBtn:hover{
     border: 1.5px solid #00bbc2;
     background: #00bbc2;
     color: #fff;
-    box-shadow: 0px 0px 3px black;
+    /* box-shadow: 0px 0px 3px black; */
 }
 .container::after{
     display: table;
@@ -652,9 +653,58 @@ tr:hover{
     clear: both;
 }
 
-
 /*--------- Result Record Ended ------------*/
 
+
+/* -------Programming Tutorial Started------ */
+
+.proTuto{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/proLap.png);
+}
+
+.proT{
+    background: #24292E;
+    /* height: 450px; */
+}
+.rcard h2{
+    font-size: 30px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    padding: 60px 20px;
+    text-shadow: 0 0 10px #000;
+}
+
+.c{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/C.jpg); }
+.cpp{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/cpp.png); }
+.java{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/java.jpg); }
+.python{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/Python.png); }
+
+.rtxt p{
+    color: #fff;
+    text-align: justify;
+}
+.rcard hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* -------Programming Tutorial Ended------ */
+
+
+/* -------Web Tutorial Started------ */
+
+.ht{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/html.jpg); }
+.cs{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/css.jpg); }
+.btsp{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/bootstrap.png); }
+.js{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/javascript.png); }
+.jQ{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/jquery.jpg); }
+.rct{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/react.jpg); }
+.NE{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/nodeEx.jpeg); }
+.mSql{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/mySql.jpg); }
+
+
+/* -------Web Tutorial Ended------ */
 
 /*--------- 1stop page started ------------*/
 
@@ -684,13 +734,3 @@ tr:hover{
 }
 
 /*--------- 1stop page ended ------------*/
-
-
-/* ----------Programming Tutorial Started--------- */
-
-.proTuto{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ptutohead.jpg);
-}
-
-
-/* ----------Programming Tutorial Ended--------- */
