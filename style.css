@@ -240,7 +240,7 @@ nav ul ul ul li{
 }
 .courseCol{
     flex-basis: 31%;
-    background-image: linear-gradient(to bottom, #001B48, #00bbc2);
+    background-image: linear-gradient(to top, #001B48, #00bbc2);
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 5%;
@@ -253,8 +253,8 @@ nav ul ul ul li{
     text-align: center;
 }
 .courseCol h3{
-    background: #616161;
-    color: #fff;
+    color: #00d7df;
+    background: #24292E;
     text-align: center;
     font-weight: 600;
     margin: 15px 0;
@@ -272,8 +272,8 @@ nav ul ul ul li{
 }
 
 .cardDesc .heroBtn:hover{
-    border: 1px solid #001B48;
-    background: #001B48;
+    border: 1px solid #00a8ad;
+    background: #00a8ad;
     transform: scale(0.9);
 }
 .courseCol:hover{
@@ -300,6 +300,7 @@ nav ul ul ul li{
 }
 .slider .crd{
     background: #ccc;
+    /* background: linear-gradient(to top, #001B48, #00a8ad); */
     flex: 1;
     margin: 0 10px;
     border-radius: 10px;
@@ -315,21 +316,26 @@ nav ul ul ul li{
     border-radius: 10px 10px 0 0;
 }
 .slider .crd .cont{
-    padding: 10px 20px;
+    padding-bottom: 10px;
+}
+.slider .crd hr{
+    width: 90%;
+    margin: 0 auto;
 }
 .slider .crd .cont .ttl{
     font-size: 22px;
     font-weight: 600;
-}
-.slider .crd .cont .sub-ttl{
-    font-size: 18px;
-    font-weight: 600;
-    color: #e74c3c;
-    line-height: 20px;
+    /* color: #e74c3c; */
+    color: #00d7df;
+    background: #24292E;
+    padding: 10px;
 }
 .crd .cont p{
     text-align: justify;
     margin: 10px 0;
+    color: #000;
+    padding: 0 20px;
+    min-height: 130px;
 }
 .crd .cont .heroBtn{
     margin-top: 7px;
@@ -629,12 +635,14 @@ tr:hover{
     padding: 20px;
     text-align: center;
     line-height: 30px;
-    min-height: 200px;
+    min-height: 170px;
 }
 .rcard h3{
-    background-color: #555;
+    color: #00d7df;
+    background: #24292E;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
+    font-size: 25px;
 }
 .rcard .heroBtn{
     background: #fff;
@@ -666,11 +674,23 @@ tr:hover{
     background: #24292E;
     /* height: 450px; */
 }
+.proT .heroBtn{
+    background: #00a8ad;
+    color: #fff;
+    border: 1.5px solid #00a8ad;
+}
+.proT .heroBtn:hover{
+    background: #00a8ad;
+    color: #fff;
+    border: 1.5px solid #fff;
+    transform: scale(0.9);
+}
 .rcard h2{
     font-size: 30px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
-    padding: 60px 20px;
+    padding: 60px 0px;
+    font-weight: 600;
     text-shadow: 0 0 10px #000;
 }
 
@@ -705,6 +725,27 @@ tr:hover{
 
 
 /* -------Web Tutorial Ended------ */
+
+
+/* -------Core Course Tutorial Started------ */
+
+.sp h2{
+    font-size: 26px;
+    padding: 63px 0;
+}
+
+.ds { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/data_structure.png); }
+.algo { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/algotithm.jpg); }
+.dm { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/discreate_math.jpg); }
+.nm { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/numarical_method.png); }
+.os { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/operating_sys.png); }
+.toc { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/theory_comp.jpg); }
+.cd { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/compiler_des.jpg); }
+.aI { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/artificial_intelligence.jpg); }
+
+
+/* -------Core Course Tutorial Ended------ */
+
 
 /*--------- 1stop page started ------------*/
 
