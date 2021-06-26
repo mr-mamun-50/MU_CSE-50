@@ -183,16 +183,16 @@ nav ul ul ul li{
 
 .textBox{
     color: #fff;
-    text-align: center;
+    text-align: left;
     /* margin-top: 200px;
     margin-left: 50px;
     margin-bottom: 50px; */
-    margin: 200px 50px;
+    margin: 100px 60px;
     width: 40%;
 }
 
 .textBox h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 .textBox p{
     margin: 10px 0 40px;
@@ -216,6 +216,7 @@ nav ul ul ul li{
     border: 1.5px solid #00a8ad;
     background: #00a8ad;
     transition: 0.5s;
+    transform: scale(0.95);
 }
 
 .row{
@@ -274,7 +275,6 @@ nav ul ul ul li{
 .cardDesc .heroBtn:hover{
     border: 1px solid #00a8ad;
     background: #00a8ad;
-    transform: scale(0.9);
 }
 .courseCol:hover{
     box-shadow: 0px 0px 10px 0px #555;
@@ -339,9 +339,6 @@ nav ul ul ul li{
 }
 .crd .cont .heroBtn{
     margin-top: 7px;
-}
-.crd .cont .heroBtn:hover{
-    transform: scale(0.9);
 }
 .owl-dots{
     text-align: center;
@@ -417,32 +414,77 @@ nav ul ul ul li{
 
 /* Footer section Started */
 
+
 .footer{
-    width: 70%;
-    text-align: center;
-    padding: 30px 0;
-    margin: 0 auto;
-    /* background: #4a3cdb; */
+    background: #001B48;
+    padding: 30px 10%;
+    margin-top: 90px;
+}
+.fcol{    
+    float: left;
+    /* background: #00bbc2; */
 }
 .footer h4{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 2px solid #00bbc2;
+    width: fit-content;
 }
-.icons .fab{
-    color: #00a8ad;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
+.footer h5{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
 }
-.fa-heart{
-    color: #00a8ad;
+.footer p{
+    color: #fff;
+    text-align: justify;
 }
+.flink{
+    text-align: right;
+}
+.fcol .icons .fab{
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    padding: 6px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+.fcol .icons .fab:hover{
+    color: #001B48;
+    background: #00bbc2;
+    border: 1px solid #00bbc2;
+    transform: scale(1.2);
+    font-weight: bolder;
+}
+.ftop{
+    text-align: right;
+}
+.gotop .fas{
+    font-size: 25px;
+    color: #ccc;
+}
+.gotop .fas:hover{
+    color: #fff;
+    transform: scale(1.2);    
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
 
 /* Footer section Ended */
-
-
-
 
 
 
@@ -516,7 +558,7 @@ nav ul ul ul li{
 }
 .contactCol{
     flex-basis: 48%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .contactCol div{
     display: flex;
@@ -683,7 +725,6 @@ tr:hover{
     background: #00a8ad;
     color: #fff;
     border: 1.5px solid #fff;
-    transform: scale(0.9);
 }
 .rcard h2{
     font-size: 30px;
@@ -746,6 +787,64 @@ tr:hover{
 
 /* -------Core Course Tutorial Ended------ */
 
+/* -------Android Tutorial Started------ */
+
+.contactCol h3{
+    font-weight: 600;
+    margin: 10px 0;
+    color: #001B48;
+}
+.contactCol .ap{
+    margin: 10px 0;
+    text-align: justify;
+    color: #000;
+    margin-left: 14px;
+}
+.contactCol ol{
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.anl{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(images/android_thumbnail2.png);
+    background-size: cover;
+    background-position: center;
+}
+.bdR{
+    border-left: 1.5px solid #616161;
+}
+.bdR .heroBtn{
+    background: #00a8ad;
+    color: #fff;
+}
+.bdR .heroBtn:hover{    
+    border: 1.5px solid #fff;
+    box-shadow: 0 0 5px gray;
+}
+
+/* -------Android Tutorial Ended------ */
+
+
+.uixl{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(images/ui-ux-thumb2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------Graphic design Tutorial Started------ */
+
+.sm h2{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 63px 0;
+}
+
+.gdth{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/Graphic_Design.jpg); }
+.illus{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ai.png); }
+.ps{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ps.jpg); }
+
+
+/* -------Graphic design Tutorial Ended------ */
 
 /*--------- 1stop page started ------------*/
 
@@ -769,7 +868,7 @@ tr:hover{
 .directMail p{
     color: black;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     text-align: center;
 }

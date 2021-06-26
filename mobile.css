@@ -91,14 +91,14 @@ nav ul li a:hover{
 .textBox{
     color: #fff;
     text-align: center;
-    margin-top: 140px;
-    margin-left: 55px;
-    /* margin: 55px auto; */
+    /* margin-top: 130px;
+    margin-left: 55px; */
+    margin: 130px auto;
     width: 250px;
 }
 
 .textBox h1{
-    font-size: 24px;
+    font-size: 26px;
 }
 .textBox p{
     font-size: 13px;
@@ -120,8 +120,25 @@ nav ul li a:hover{
 
 /* Call to action section Ended */
 
+/* footer section started */
+
+.footer h5{
+    margin-top: 20px;
+}
+.flink{
+    margin-bottom: 20px;
+}
+
+/* footer section ended */
+
 /* contact page started */
 
+.location{
+    width: 90%;
+}
+.contactUs{
+    width: 90%;
+}
 .contactCol div .fa{
     font-size: 20px;
     margin: 5px;
@@ -144,4 +161,10 @@ nav ul li a:hover{
 
 .directMail{
     padding: 30px;
+}
+
+
+.bdR{
+    border-left: none;
+    border-top: 0.5px solid gray;
 }
