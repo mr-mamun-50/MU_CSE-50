@@ -110,7 +110,6 @@ nav ul ul li a:hover{
     font-weight: bold;
 }
 
-
 nav ul ul{
     position: absolute;
     top: 100px;
@@ -136,7 +135,6 @@ nav ul li:hover > ul{
     visibility: visible;
 }
 
-
 nav ul ul li{
     position: relative;
     margin: 0px;
@@ -156,37 +154,23 @@ nav ul ul ul li{
     left: 160px;
     width: 270px;
 }
-
 .fa-caret-right{
     margin-left: 20px;
     font-size: 13px;
 }
 
-
 .show, .icon, nav input{
     display: none;
 }
+
 /* -------------Navigation Section Ended --------------*/
 
 
 
 
-/* .textBox{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-} */
-
 .textBox{
     color: #fff;
     text-align: left;
-    /* margin-top: 200px;
-    margin-left: 50px;
-    margin-bottom: 50px; */
     margin: 100px 60px;
     width: 40%;
 }
