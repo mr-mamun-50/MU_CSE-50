@@ -152,11 +152,10 @@ nav ul ul ul li{
     position: relative;
     top: -80px;
     left: 160px;
-    width: 270px;
+    width: 280px;
 }
 .fa-caret-right{
     margin-left: 20px;
-    font-size: 13px;
 }
 
 .show, .icon, nav input{
@@ -213,7 +212,7 @@ nav ul ul ul li{
 }
 
 
-/* Course Design Started */
+/* Current Course Design Started */
 
 .course{
     width: 100%;
@@ -266,7 +265,7 @@ nav ul ul ul li{
     box-shadow: 0px 0px 10px 0px #555;
 }
 
-/* Course Design Ended */
+/* Current Course Design Ended */
 
 
 
@@ -347,18 +346,6 @@ nav ul ul ul li{
 
 /* tutorial view started */
 
-
-
-/* We have design Started */
-
-.weHave{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-/* We have design Ended */
 
 
 /* Call to action section Started */
@@ -490,8 +477,9 @@ nav ul ul ul li{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/libraryBooks.png);
 }
 .sub-header h1{
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
+    padding: 0 20px;
 }
 .aboutUs{
     width: 80%;
@@ -506,11 +494,12 @@ nav ul ul ul li{
 .aboutCol img{
     width: 100%;
 }
-.aboutCol h1{
+.aboutCol h2{
     padding-top: 0;
 }
 .aboutCol p{
     padding: 15px 0 25px;
+    text-align: justify;
 }
 .redBtn{
     border: 1.5px solid #00a8ad;
@@ -640,7 +629,7 @@ tr:hover{
 .container{
     padding: 1% 0%;
     box-sizing: border-box;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 .rcard{
@@ -860,3 +849,49 @@ tr:hover{
 }
 
 /*--------- 1stop page ended ------------*/
+
+
+/* --------Course Design Started--------- */
+
+.cHeader{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/course_Header.jpeg);
+}
+.crsCol{
+    float: left;
+    margin-top: 50px;
+}
+.crsCol h2{
+    color: #001B48;
+}
+.crsMat{
+    float: left;
+    box-shadow: 0 0 5px #ccc;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 32%;
+    transition: 0.3s;
+    /* background:#faebd7; */
+}
+.crsMat:hover{
+    transform: scale(1.02);
+}
+.crsMat a{
+    margin-left: 4%;
+    width: 83%;
+    text-decoration: none;
+    color: #616161;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 18px;
+
+    /* border: 1px solid; */
+}
+.crsMat img{
+    width: 13%;
+}
+.matEle{
+    float: left;
+}
+
+/* --------Course Design Ended--------- */

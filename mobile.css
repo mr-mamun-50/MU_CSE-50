@@ -171,3 +171,19 @@ nav ul li a:hover{
     border-left: none;
     border-top: 0.5px solid gray;
 }
+
+.container{
+    width: 90%;
+}
+
+
+.crsMat{
+    width: 46.5%;
+}
+.crsMat img{
+    width: 16.5%;
+}
+.crsMat a{
+    margin-left: 3.5%;
+    width: 80%;
+}
