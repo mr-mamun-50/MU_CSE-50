@@ -865,7 +865,8 @@ tr:hover{
 }
 .crsMat{
     float: left;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 1px 1px 2px #ccc;
+    border: 1px solid #ccc;
     margin: 5px;
     border-radius: 10px;
     padding: 10px;
@@ -880,7 +881,7 @@ tr:hover{
     margin-left: 4%;
     width: 83%;
     text-decoration: none;
-    color: #616161;
+    color: #555;
     font-size: 14px;
     font-weight: 350;
     line-height: 18px;
