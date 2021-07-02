@@ -83,9 +83,7 @@ nav ul{
     top: 5px;
 }
 nav ul li{
-    float: left;
     display: inline-block;
-    /* background: #1b1b1b; */
     margin: 0 5px;
 }
 nav ul li a{

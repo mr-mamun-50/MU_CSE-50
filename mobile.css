@@ -11,6 +11,9 @@ nav ul{
     float: left;
     top: 0;
 }
+nav ul li{
+    float: left;
+}
 nav ul li a{
     line-height: 40px;
     padding: 0 25px;
