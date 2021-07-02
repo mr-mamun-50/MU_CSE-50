@@ -6,9 +6,6 @@ h1{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homeHeader.jpg);
 }
 
-nav .fas{
-    margin-right: 5px;
-}
 nav ul{
     margin-right: 0px;
     float: left;
@@ -16,6 +13,7 @@ nav ul{
 }
 nav ul li a{
     line-height: 40px;
+    padding: 0 25px;
 }
 nav .logo{
     padding-left: 30px;
@@ -40,21 +38,25 @@ nav ul ul ul li {
 }
     
 nav ul ul a, nav ul ul li .show {
-    padding-left: 40px;
+    padding-left: 60px;
 }    
 nav ul ul ul a {
-    padding-left: 80px;
+    padding-left: 85px;
 }
 
-.Feedback{
-    width: 80%;
+nav .fas{
+    width: 25px;
 }
-   
+nav .fa-caret-down{
+    position: absolute;
+    right: 30px;
+    line-height: 40px;
+}
 .show{
     display: block;
     color: white;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 25px;
     line-height: 40px;
     cursor: pointer;
 }
@@ -98,7 +100,7 @@ nav ul li a:hover{
 }
 
 .textBox h1{
-    font-size: 26px;
+    font-size: 28px;
 }
 .textBox p{
     font-size: 13px;
@@ -119,6 +121,10 @@ nav ul li a:hover{
 }
 
 /* Call to action section Ended */
+
+.Feedback{
+    width: 80%;
+}
 
 /* footer section started */
 

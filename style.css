@@ -155,7 +155,9 @@ nav ul ul ul li{
     width: 280px;
 }
 .fa-caret-right{
-    margin-left: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 .show, .icon, nav input{
@@ -176,6 +178,8 @@ nav ul ul ul li{
 
 .textBox h1{
     font-size: 60px;
+    width: fit-content;
+    border-bottom: 2px solid #00a8ad;
 }
 .textBox p{
     margin: 10px 0 40px;
