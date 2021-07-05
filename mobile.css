@@ -2,10 +2,6 @@ h1{
     font-size: 28px;
 }
 
-.header{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homeHeader.jpg);
-}
-
 nav ul{
     margin-right: 0px;
     float: left;
@@ -113,10 +109,15 @@ nav ul li a:hover{
     flex-direction: column;
 }
 
+
+.slider .crd, .courseCol{
+    margin: 10px 5%;
+}
+
 /* Call to action section Started */
 
 .cta{
-    /* width: 80%; */
+    width: 90%;
     padding: 60px 20px;
 }
 .cta h1{
@@ -126,11 +127,15 @@ nav ul li a:hover{
 /* Call to action section Ended */
 
 .Feedback{
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* footer section started */
 
+.footer{
+    padding: 30px 7.5%;
+}
 .footer h5{
     margin-top: 20px;
 }
@@ -145,6 +150,9 @@ nav ul li a:hover{
 
 /* contact page started */
 
+.contactHeader{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contactIMG.jpg);
+}
 .location{
     width: 90%;
 }
@@ -186,13 +194,30 @@ nav ul li a:hover{
 }
 
 
+.facRow{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.matRow{
+    width: 100%;
+}
+.crsRow{
+    padding: 0 10px 30px 10px;
+}
+.facultyINFO{
+    text-align: center;
+    width: 100%;
+}
 .crsMat{
     width: 46.5%;
 }
-.crsMat img{
-    width: 16.5%;
+.pdfICO{
+    width: 14%;
+}
+.crsMat .pdfICO .fas{
+    font-size: 28px;
 }
 .crsMat a{
-    margin-left: 3.5%;
-    width: 80%;
+    width: 82%;
 }
