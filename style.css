@@ -892,6 +892,10 @@ tr:hover{
 .matRow{
     width: 75%;
 }
+.matRow p{
+    margin: 10px 0 0 5px;
+    font-size: 15px;
+}
 .facultyINFO{
     text-align: center;
 }
