@@ -108,7 +108,7 @@
 
                             <ul>
                                 <li><a href="Basic_Electronics.html"> Basic Electronics Engineering </a></li>
-                                <li><a href="Matrix_CV_FA.html"> Matrics, CV & Fourier Analysis </a></li>
+                                <li><a href="Matrix_CV_FA.html"> Matrix, CV & Fourier Analysis </a></li>
                                 <li><a href="Discreate_Math.html"> Discreate Mathematics </a></li>
                                 <li><a href="Project_200.html"> Project 200 </a></li>
                             </ul>
@@ -254,11 +254,49 @@
 
 
 
-    <!-- Footer section Started-->
+    <!-- Script for form started -->
+
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="formLoad()"></iframe>
+
+    <!-- Script for form Ended -->
+
+    <!-- Footer section Started -->
 
     <section class="footer">
 
-        <div class="fcol col-6">
+        <div class="fcol col-3 ftrTopEle">
+            <h4> Feedback </h4>
+            <div class="contactCol">
+    
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
+    
+                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="email" name="emailAddress" placeholder="Email" required>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <button type="submit" class="heroBtn"> Submit <i class="fas fa-paper-plane"></i> </button>
+                </form>
+
+                <p id="subMsg"></p>
+                <p id="errMsg"></p>
+            </div>
+        </div>
+        <div class="fcol col-3 ftrTopEle">
+
+            <h4>Quick Links</h4>
+            
+            <ol>
+                <li><a href="https://metrouni.edu.bd" target="blank">Website: Metropolitan University <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">FB/ MU Official Group <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank">FB/ Department of CSE <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/734057760032501/" target="blank">FB/ Computer Programming <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="faculty-contact.html" target="blank">Faculty information <i class="fas fa-external-link-alt"></i></a></li>
+            </ol>
+        </div>
+        <div class="fcol col-3 ftrTopEle">
 
             <h4>About Us</h4>
 
@@ -266,31 +304,35 @@
                 University and it is not an official website. Our main purpose is to help our batch and our junior
                 batches through this website.</p><br>
         </div>
+        <div class="fcol col-3 flink ftrTopEle">
 
-        <div class="fcol col-6 flink">
-
-            <h5>Follow Us</h5>
+            <h4>Follow Us</h4>
             <div class="icons">
                 <a href="#"> <i class="fab fa-facebook-f"> </i></a>
                 <a href="#"> <i class="fab fa-twitter"> </i></a>
                 <a href="#"> <i class="fab fa-instagram"> </i></a>
                 <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
             </div>
+        </div><hr>
+        <div class="fcol col-6">
+
+            <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
         </div>
 
-        <div class="fcol col-12">
+        <div class="fcol col-6 ftop">
 
-            <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>            
-        </div>
-
-        <div class="fcol col-12 ftop">
-
-            <a href="#top" class="gotop"> <i class="fas fa-angle-double-up"></i> </a>         
+            <a href="#top">
+                <div class="gotop">
+                    Back to Top <i class="fas fa-angle-double-up"></i>
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- Footer section Ended-->
-
+    
+    <!-- Linked to javascript file -->
+    <script src="index.js"></script>
 
 
 </body>

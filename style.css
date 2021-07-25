@@ -1,15 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+body {
+    background: #F6F6F6;
+}
+
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
-p{
+
+p {
     color: #24292E;
     font-size: 14px;
     font-weight: 300;
@@ -17,17 +22,17 @@ p{
     /* padding: 10px; */
 }
 
-.dottedHR{
+.dottedHR {
     border: dotted 6px #616161;
     border-bottom: none;
     margin: 10px auto;
     width: 90px;
 }
 
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homeHeader.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/homeHeader.jpg);
     /* background: url(images/homeHeader.jpg); */
     background-position: center;
     background-size: cover;
@@ -36,156 +41,250 @@ p{
 
 
 /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 
 /* Navigation Section Started */
 
-nav{
-    /* background: #1b1b1b; */
-    /* background-image: linear-gradient(to left, #ff0a6c, #4a3cdb); */
-    /* background-image: linear-gradient(to right, #001B48, #00a8ad); */
-    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8));
-
+nav {
+    /* background: #001B48; */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8));
 }
-nav .fas{
+
+nav .fas {
     color: #f44336;
 }
-nav::after{
+
+nav::after {
     content: '';
     display: table;
     clear: both;
 }
-nav .logo{
+
+nav .logo {
     float: left;
-    padding: 15px 60px 5px 60px;
+    padding: 15px 2% 5px 7.5%;
 }
-nav .logo img{
+
+nav .logo img {
     height: 60px;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 7.5%;
     position: relative;
-
     top: 5px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     line-height: 80px;
     font-size: 14px;
-    padding: 8px 15px;
+    padding: 8px 10px;
+    /* font-family: 'Oswald', sans-serif; */
 }
 
-nav ul li a:hover{
-    color: #fff;
+nav ul li a:hover {
     border-radius: 5px;
-    box-shadow: 0 0 10px #f44336,
-                0 0 10px #f44336;
+    box-shadow: 0 0 8px #f44336, 0 0 8px #f44336;
 }
 
-nav ul ul li a:hover{
+nav ul ul li a:hover {
     /* color: #ff0a6c; */
     box-shadow: none;
     text-shadow: 1px 1px 5px black;
     font-weight: bold;
 }
 
-nav ul ul{
+nav ul ul {
     position: absolute;
     top: 100px;
-    border-top: 3px solid #f44336;    
+    border-top: 3px solid #f44336;
     opacity: 0;
     visibility: hidden;
     transition: top 0.3s;
 }
 
-nav ul ul li{
-    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9));
+nav ul ul li {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9));
     /* background-image: linear-gradient(to right, #001B48, #00a8ad); */
     /* background-image: linear-gradient(to left, #ff0a6c, #4a3cdb); */
 }
 
-nav ul ul ul{
+nav ul ul ul {
     border-top: none;
 }
 
-nav ul li:hover > ul{
+nav ul li:hover>ul {
     top: 80px;
     opacity: 1;
     visibility: visible;
 }
 
-nav ul ul li{
+nav ul ul li {
     position: relative;
     margin: 0px;
     width: 160px;
     float: none;
     display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-nav ul ul li a{
+nav ul ul li a {
     line-height: 40px;
 }
 
-nav ul ul ul li{
+nav ul ul ul li {
     position: relative;
     top: -80px;
     left: 160px;
     width: 280px;
 }
-.fa-caret-right{
+
+.fa-caret-right {
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-.show, .icon, nav input{
+.show,
+.icon,
+nav input {
     display: none;
 }
 
+
 /* -------------Navigation Section Ended --------------*/
 
-
-
-
-.textBox{
-    color: #fff;
-    text-align: left;
-    margin: 100px 60px;
-    width: 40%;
+.load {
+    animation: slide 2s;
 }
 
-.textBox h1{
-    font-size: 60px;
-    width: fit-content;
+.header {
+    background-repeat: no-repeat;
+    /* background-size: 120%; */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 16s infinite;
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.principle {
+    margin-left: 7.5%;
+    width: 43%;
+    margin-top: 7%;
+}
+
+.principle h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
     border-bottom: 2px solid #f44336;
 }
-.textBox p{
-    margin: 10px 0 40px;
-    font-size: 14px;
+
+.principle p {
+    font-size: 16px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
-.heroBtn{
+@keyframes slide {
+    0% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
+        background-size: 120%;
+    }
+    25% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
+        background-size: 100%;
+    }
+    25.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
+        background-size: 120%;
+    }
+    50% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
+        background-size: 100%;
+    }
+    50.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
+        background-size: 120%;
+    }
+    75% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
+        background-size: 100%;
+    }
+    75.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
+        background-size: 120%;
+    }
+    100% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
+        background-size: 100%;
+    }
+}
+
+.heroBtn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -197,18 +296,20 @@ nav ul ul ul li{
     position: relative;
     cursor: pointer;
 }
-.heroBtn:hover{
+
+.heroBtn:hover {
     border: 1.5px solid #f44336;
     background: #f44336;
     border-radius: 50px;
     transition: 0.5s;
     transform: scale(0.95);
 }
-.textBox .heroBtn{
+
+.principle .heroBtn {
     margin-bottom: 50px;
 }
 
-.row{
+.row {
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
@@ -217,16 +318,18 @@ nav ul ul ul li{
 
 /* Current Course Design Started */
 
-.course{
+.course {
     width: 100%;
     margin: auto;
-    padding-top: 80px;
+    margin-top: 40px;
 }
-.course h1{
+
+.course h1 {
     text-align: center;
     color: #001B48;
 }
-.courseCol{
+
+.courseCol {
     flex-basis: 31%;
     /* background-image: linear-gradient(to right, #001B48, #f44336); */
     background: #ccc;
@@ -237,7 +340,8 @@ nav ul ul ul li{
     box-sizing: border-box;
     transition: 0.3s;
 }
-.courseCol h3{
+
+.courseCol h3 {
     color: #f44336;
     background: #24292E;
     text-align: center;
@@ -245,72 +349,98 @@ nav ul ul ul li{
     margin: 0 0 15px 0;
     padding: 10px;
 }
-.courseCol .cardDesc{
-    padding: 10px 20px 10px 20px;
+
+.courseCol .cardDesc {
+    padding: 0px 20px 10px 20px;
     text-align: center;
     line-height: 25px;
     color: #24292E;
 }
-.cardDesc a{
+
+.cardDesc a {
     text-decoration: none;
     color: #24292E;
 }
-.cardDesc .heroBtn{
+
+.slider .courseCol .cardDesc table {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.slider .courseCol .cardDesc table td {
+    text-align: left;
+    padding: 3px 2px;
+}
+
+.cardDesc .heroBtn {
     color: #fff;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.courseCol:hover{
+
+.courseCol:hover {
     box-shadow: 0px 0px 10px 0px #555;
 }
+
 
 /* Current Course Design Ended */
 
 
-
 /* tutorial view started */
 
-.tutorials{
+.tutorials {
     margin-top: 30px;
     padding: 10px;
     text-align: center;
     color: #001B48;
 }
-.slider{
+
+.headingStyle {
+    font-family: 'Oswald', sans-serif;
+}
+
+.slider {
     max-width: 1100px;
     display: flex;
     text-align: center;
     margin: 0 auto;
 }
-.slider .crd{
+
+.slider .crd {
     background: #ccc;
     /* background: linear-gradient(to top, #001B48, #00a8ad); */
     flex: 1;
-    margin: 10px 10px;
+    margin: 15px 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
-.slider .crd:hover{
+
+.slider .crd:hover {
     box-shadow: 0px 0px 10px 0px #555;
 }
-.slider .img{
+
+.slider .img {
     height: 180px;
     width: 100%;
 }
-.slider .img img{
+
+.slider .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-.slider .crd .cont{
+
+.slider .crd .cont {
     padding-bottom: 10px;
 }
-.slider .crd hr{
+
+.slider .crd hr {
     width: 90%;
     margin: 0 auto;
 }
-.slider .crd .cont .ttl{
+
+.slider .crd .cont .ttl {
     font-size: 22px;
     font-weight: 600;
     /* color: #e74c3c; */
@@ -318,22 +448,26 @@ nav ul ul ul li{
     background: #24292E;
     padding: 10px;
 }
-.crd .cont p{
+
+.crd .cont p {
     text-align: justify;
     margin: 10px 0;
     color: #000;
     padding: 0 20px;
     min-height: 130px;
 }
-.crd .cont .heroBtn{
+
+.crd .cont .heroBtn {
     margin-top: 7px;
     width: 100px;
 }
-.owl-dots{
+
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+
+.owl-dot {
     height: 11px;
     width: 11px;
     border-radius: 50px;
@@ -343,21 +477,162 @@ nav ul ul ul li{
     border: 1.5px solid #f44336!important;
     transition: all 0.3s ease;
 }
+
 .owl-dot:hover,
-.owl-dot.active{
+.owl-dot.active {
     background: #f44336!important;
 }
+
+.owl-carousel {
+    width: 100%;
+}
+
+
+/* owl nav */
+
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #616161 !important;
+    font-size: 65px !important;
+    background: none !important;
+}
+
+.owl-prev {
+    left: -2%;
+}
+
+.owl-next {
+    right: -2%;
+}
+
+
+/* owl nav */
+
 
 /* tutorial view Ended */
 
 
+/* Todays Routine View Started */
+
+.routineSection {
+    width: 100%;
+}
+
+.tRoutine {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.tRoutine .crd {
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+    float: left;
+    margin: 5px 5px;
+    border-radius: 10px;
+    width: 24%;
+    transition: 0.3s;
+}
+
+.tRoutine .crd .cont .ttl {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f44336;
+    background: #24292E;
+    padding: 10px;
+}
+
+.gradIcon .fa-user-graduate {
+    font-size: 80px;
+    color: #f44336;
+    padding: 20px 10px 10px 10px;
+}
+
+.crdTable {
+    padding: 0 10px;
+}
+
+.tRoutine .crd .cont table {
+    width: fit-content;
+    margin: 15px auto 25px auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.tRoutine .crd .cont table td {
+    text-align: left;
+    padding: 5px 5px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.timeStyle {
+    font-family: 'Oswald', sans-serif;
+}
+
+.tRoutine .crd:hover {
+    box-shadow: 0 0 5px #ccc;
+    transform: scale(1.02);
+}
+
+.tRoutine::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* Todays Routine View Ended */
+
+
+/* Student Statistics Started */
+
+.stStat {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.statCol {
+    float: left;
+    width: 40%;
+    margin-top: 70px;
+    margin-right: 1%;
+}
+
+.statCol:last-child {
+    margin-right: 0;
+    width: 59%;
+}
+
+.statCol p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.stStat::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* Student Statistics Ended */
+
 
 /* Call to action section Started */
 
-.cta{
+.cta {
     margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Call_2_act.jpg);
+    width: 85%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Call_2_act.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -365,72 +640,125 @@ nav ul ul ul li{
     padding: 80px 200px;
     box-sizing: border-box;
 }
-.cta h1{
+
+.cta h1 {
     color: #fff;
     /* margin-bottom: 40px; */
     padding: 0;
 }
-.cta p{
+
+.cta p {
     color: #fff;
     margin-bottom: 20px;
     padding: 20px;
 }
 
+
 /* Call to action section Ended */
-
-
-/* Feedback section Started */
-
-.Feedback{
-    width: 35%;
-    margin: 0 10%;
-}
-.Feedback h3{
-    margin-bottom: 10px;
-    color: #24292E;
-}
-
-/* Feedback section Ended */
 
 
 /* -------Footer section Started------- */
 
-
-.footer{
+.footer {
     background: #001B48;
-    padding: 30px 10%;
     margin-top: 90px;
+    padding: 30px 7.5%;
+    border-radius: 130px 130px 0 0;
 }
-.fcol{    
+
+.footer .fcol {
     float: left;
+    padding-right: 35px;
 }
-.footer h4{
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+.footer .fcol:nth-child(3) {
+    padding-right: 10px;
+}
+
+.footer .fcol:nth-child(4),
+.footer .fcol:last-child {
+    padding-right: 0;
+}
+
+.footer .ftrTopEle {
+    min-height: 330px;
+}
+
+.footer h4 {
+    margin: 20px auto;
     font-weight: 600;
     font-size: 18px;
     color: #fff;
     border-bottom: 2px solid #f44336;
     width: fit-content;
+    text-align: center;
 }
-.footer h5{
+
+.footer .fcol .contactCol input,
+.footer .fcol .contactCol textarea {
+    padding: 5px;
     margin-bottom: 10px;
-    margin-top: 60px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-.footer p{
+
+.footer .fcol .contactCol textarea {
+    margin-bottom: 5px;
+}
+
+.msgSccs {
+    background: #4BB543;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+.msgErr {
+    background: #ff0000;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+.footer .fcol .contactCol p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer .fcol .contactCol .heroBtn {
+    padding: 5px 10px;
+}
+
+.footer p {
     color: #fff;
     text-align: justify;
 }
-.flink{
-    text-align: right;
+
+.footer ol li {
+    list-style: none;
+    margin-bottom: 10px;
 }
-.fcol .icons .fab{
+
+.footer ol li .fa-external-link-alt {
+    float: right;
+    line-height: 28px;
+    color: #f44336;
+}
+
+.footer ol li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.fcol .icons .fab {
     color: #fa6055;
+    margin: 15% 5px;
     text-align: center;
-    margin-left: 10px;
     padding: 6px;
     border: 1px solid #fa6055;
     border-radius: 50px;
@@ -438,26 +766,49 @@ nav ul ul ul li{
     height: 30px;
     transition: 0.3s;
 }
-.fcol .icons .fab:hover{
+
+.fcol .icons .fab:hover {
     color: #001B48;
     background: #f44336;
     border: 1px solid #f44336;
     transform: scale(1.2);
     font-weight: bolder;
 }
-.ftop{
-    text-align: right;
-}
-.gotop .fas{
-    font-size: 25px;
-    color: #f44336;
-}
-.gotop .fas:hover{
-    color: #f44336;
-    transform: scale(1.2);    
+
+.footer .flink {
+    text-align: center;
 }
 
-.footer::after{
+.gotop {
+    border: 3px solid #ccc;
+    background: #fff;
+    padding: 5px 10px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.ftop a {
+    text-decoration: none;
+    color: #24292E;
+    font-size: 12px;
+    float: right;
+}
+
+.gotop .fas {
+    color: #f44336;
+    font-size: 15px;
+}
+
+.gotop:hover {
+    transform: scale(1.05);
+    color: #f44336;
+}
+
+.footer hr {
+    margin: 10px auto 20px auto;
+}
+
+.footer::after {
     display: table;
     content: '';
     clear: both;
@@ -467,50 +818,56 @@ nav ul ul ul li{
 /* --------Footer section Ended--------- */
 
 
-
 /* -------About Page Started------- */
 
-
-.sub-header{
+.sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/AboutIMG1.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/AboutIMG1.jpg);
     background-position: center;
     background-size: cover;
     /* text-align: center; */
     color: #fff;
 }
-.sub-header h1{
+
+.sub-header h1 {
     margin-top: 80px;
     text-align: center;
     padding: 0 20px;
 }
-.aboutUs{
-    width: 80%;
+
+.aboutUs {
+    width: 85%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-.aboutCol{
+
+.aboutCol {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-.aboutCol img{
+
+.aboutCol img {
     width: 100%;
 }
-.aboutCol h2{
+
+.aboutCol h2 {
     padding-top: 0;
 }
-.aboutCol p{
+
+.aboutCol p {
     padding: 15px 0 25px;
     text-align: justify;
 }
-.redBtn{
+
+.redBtn {
     border: 1.5px solid #f44336;
     background: transparent;
     color: #f44336;
 }
-.redBtn:hover{
+
+.redBtn:hover {
     color: #fff;
 }
 
@@ -518,57 +875,65 @@ nav ul ul ul li{
 /* -------About Page Ended------- */
 
 
-
-
-
 /* -------Contact Page Started-------- */
 
-.contactHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contactIMG1.jpg);
+.contactHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/contactIMG1.jpg);
 }
-.location{
-    width: 80%;
+
+.location {
+    width: 85%;
     margin: auto;
     padding: 80px 0;
 }
-.location iframe{
+
+.location iframe {
     width: 100%;
 }
-.contactUs{
-    width: 80%;
+
+.contactUs {
+    width: 85%;
     margin: auto;
 }
-.contactCol{
+
+.contactCol {
     flex-basis: 48%;
     margin-bottom: 20px;
 }
-.contactCol div{
+
+.contactCol div {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
-.contactCol div .fa{
+
+.contactCol div .fa {
     font-size: 28px;
     color: #f44336;
     margin: 10px;
     margin-right: 30px;
 }
-.contactCol div .far{
+
+.contactCol div .far {
     font-size: 28px;
     color: #f44336;
     margin: 10px;
     margin-right: 30px;
 }
-.contactCol div p{
+
+.contactCol div p {
     padding: 0;
 }
-.contactCol div h5{
+
+.contactCol div h5 {
     font-size: 20px;
     margin-bottom: 5px;
     color: #555;
     font-weight: 400;
 }
-.contactCol input, .contactCol textarea{
+
+.contactCol input,
+.contactCol textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 17px;
@@ -576,76 +941,117 @@ nav ul ul ul li{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-textarea{
+
+textarea {
     resize: vertical;
 }
+
+.contactUs .row .msg p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
 
 /* -------Contact Page Ended-------- */
 
 
-
-
 /* --------Table Design Started-------- */
 
-table{
+.tHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/routineHeader.jpg);
+}
+
+.pTable table {
     border: 1px solid #616161;
     border-collapse: collapse;
-    width: 90%;
-    margin: auto;
+    width: 85%;
+    margin: 30px auto 0 auto;
     box-sizing: border-box;
     font-size: 14px;
 }
-table caption{
+
+.pTable table caption {
     color: #001B48;
 }
-th, td{
-    border: 1px solid #616161;
-    padding: 5px;
-}
-th{
-    background: #f44336;
-    color: #fff;
-}
-.secTable{
-    text-align: center;
-}
-table caption{
-    font-weight: bold;
-    font-size: 28px;
-    padding: 10px;
-    margin-top: 30px;
-}
-tr:nth-child(even){
-    background-color: #ccc;
-}
-tr:nth-child(odd){
-    background-color: #fff;
-}
-tr:hover{
-    background-color: #f79b94;
-}
-.FacultyP{
-    width: auto;
-    margin: 40px auto;
-    text-align: center;
+
+.pTable th,
+.pTable td {
+    border: 1px solid #ccc;
     padding: 5px;
 }
 
-/* --------Table Design Started-------- */
+.pTable th {
+    background: #001B48;
+    color: #fff;
+}
+
+.pTable .secTable {
+    text-align: center;
+}
+
+.pTable table caption {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.pTable tr:nth-child(even) {
+    background-color: rgb(233, 233, 233);
+}
+
+.pTable tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.pTable tr:hover {
+    background-color: #ffb1ac;
+}
+
+.pTable tr td:first-child {
+    background: #001B48;
+    color: #fff;
+    text-align: center;
+}
+
+.dlRoutine {
+    margin: 50px auto;
+    text-align: center;
+    width: 85%;
+}
+
+.dlRoutine p {
+    color: #000;
+    font-size: 16px;
+}
+
+.dlRoutine .heroBtn {
+    background: #4BB543;
+    margin-top: 20px;
+    border: 1px solid #4BB543;
+    font-size: 16px;
+}
+
+
+/* --------Table Design Ended-------- */
 
 
 /*--------- Result Record Started -----------*/
 
-.libr{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/resRecords.jpg);
+.libr {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/resRecords.jpg);
 }
-.container{
+
+.container {
     padding: 1% 0%;
     box-sizing: border-box;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
-.rcard{
+
+.rcard {
     /* background-image: linear-gradient(to top, #001B48, #00bbc2); */
     background: #ccc;
     float: left;
@@ -657,17 +1063,20 @@ tr:hover{
     color: white;
     transition: 0.3s;
 }
-.rcard:hover{
+
+.rcard:hover {
     box-shadow: 0px 0px 5px 0px black;
 }
-.rcard .rtxt{
+
+.rcard .rtxt {
     color: #24292E;
     padding: 20px;
     text-align: center;
     line-height: 30px;
     min-height: 170px;
 }
-.rcard h3{
+
+.rcard h3 {
     color: #f44336;
     background: #24292E;
     border-radius: 10px 10px 0px 0px;
@@ -675,27 +1084,28 @@ tr:hover{
     font-size: 25px;
 }
 
-.container::after{
+.container::after {
     display: table;
     content: '';
     clear: both;
 }
+
 
 /*--------- Result Record Ended ------------*/
 
 
 /* -------Programming Tutorial Started------ */
 
-.proTuto{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/prog_tutoHead.jpg);
+.proTuto {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/prog_tutoHead.jpg);
 }
 
-.proT{
+.proT {
     background: #24292E;
     /* height: 450px; */
 }
 
-.rcard h2{
+.rcard h2 {
     font-size: 25px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
@@ -704,17 +1114,29 @@ tr:hover{
     text-shadow: 0 0 10px #000;
 }
 
-.c{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/c_bg.jpg); }
-.cpp{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/cpp_bg.jpg); }
-.java{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/java_bg.jpg); }
-.python{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/python_bg.jpg); }
+.c {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/c_bg.jpg);
+}
 
-.rtxt p{
+.cpp {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/cpp_bg.jpg);
+}
+
+.java {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/java_bg.jpg);
+}
+
+.python {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/python_bg.jpg);
+}
+
+.rtxt p {
     color: #fff;
     text-align: justify;
     min-height: 150px;
 }
-.rcard hr{
+
+.rcard hr {
     width: 90%;
     margin: 0 auto;
 }
@@ -725,18 +1147,41 @@ tr:hover{
 
 /* -------Web Tutorial Started------ */
 
-.webHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/webHeader.jpg);
+.webHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/webHeader.jpg);
 }
 
-.ht{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/html_bg.jpg); }
-.cs{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/css_bg.jpg); }
-.btsp{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/bootstrap_bg.jpg); }
-.js{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/javaScript_bg.jpg); }
-.jQ{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/jquery.jpg); }
-.rct{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/React_bg.jpg); }
-.NE{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/node_express_bg.jpg); }
-.mSql{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/mySQL_bg.jpg); }
+.ht {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/html_bg.jpg);
+}
+
+.cs {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/css_bg.jpg);
+}
+
+.btsp {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/bootstrap_bg.jpg);
+}
+
+.js {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/javaScript_bg.jpg);
+}
+
+.jQ {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/jquery.jpg);
+}
+
+.rct {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/React_bg.jpg);
+}
+
+.NE {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/node_express_bg.jpg);
+}
+
+.mSql {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/mySQL_bg.jpg);
+}
 
 
 /* -------Web Tutorial Ended------ */
@@ -744,84 +1189,132 @@ tr:hover{
 
 /* -------Core Course Tutorial Started------ */
 
-.cseCheader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/cse_core_header1.jpg);
+.cseCheader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/cse_core_header1.jpg);
 }
 
-.ds { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ds_bg.jpg); }
-.algo { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/algo_bg.jpg); }
-.dm { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/disc_math.jpg); }
-.nm { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/numarical_method_bg.png); }
-.os { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/os_bg.jpg); }
-.toc { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/theory_comp_bg.jpg); }
-.cd { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/compiler_des_bg.jpg); }
-.aI { background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/arti_inte_bg.jpg); }
+.ds {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/ds_bg.jpg);
+}
+
+.algo {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/algo_bg.jpg);
+}
+
+.dm {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/disc_math.jpg);
+}
+
+.nm {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/numarical_method_bg.png);
+}
+
+.os {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/os_bg.jpg);
+}
+
+.toc {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/theory_comp_bg.jpg);
+}
+
+.cd {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/compiler_des_bg.jpg);
+}
+
+.aI {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/arti_inte_bg.jpg);
+}
 
 
 /* -------Core Course Tutorial Ended------ */
 
+
 /* -------Android Tutorial Started------ */
 
-.androidheader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Android_background_header.jpg);
+.androidheader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/Android_background_header.jpg);
 }
-.contactCol h3{
+
+.contactCol h3 {
     font-weight: 600;
     margin: 10px 0;
     color: #001B48;
 }
-.contactCol .ap{
+
+.contactCol .ap {
     margin: 10px 0;
     text-align: justify;
     color: #000;
     margin-left: 14px;
 }
-.contactCol ol{
+
+.contactCol ol {
     margin-left: 30px;
     line-height: 30px;
     font-size: 14px;
 }
-.anl{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(images/Android_background1.jpg);
+
+.anl {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/Android_background1.jpg);
     background-size: cover;
     background-position: center;
 }
-.bdR{
+
+.bdR {
     border-left: 1.5px solid #616161;
 }
 
+
 /* -------Android Tutorial Ended------ */
+
 
 /* -------UI/UX Tutorial Started------ */
 
-.uiUxHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ui_ux_header.jpg);
+.uiUxHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/ui_ux_header.jpg);
 }
-.uixl{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(images/ui_ux_background.jpg);
+
+.uixl {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/ui_ux_background.jpg);
     background-size: cover;
     background-position: center;
 }
+
 
 /* -------UI/UX Tutorial Ended------ */
 
 
 /* -------Graphic design Tutorial Started------ */
 
-.gdHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gdHeader.jpg);
+.gdHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/gdHeader.jpg);
 }
-.sm h2{
+
+.sm h2 {
     font-size: 23px;
     font-weight: 600;
     padding: 63px 0;
 }
 
-.gdth{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/gd_th_bg.jpg); }
-.illus{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/illustrator_bg.jpg); }
-.ps1{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ps_beg_bg.jpg); }
-.ps2{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/phoshop_int_bg.jpg); }
-.ps3{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ps_adv_bg.jpg); }
+.gdth {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/gd_th_bg.jpg);
+}
+
+.illus {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/illustrator_bg.jpg);
+}
+
+.ps1 {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/ps_beg_bg.jpg);
+}
+
+.ps2 {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/phoshop_int_bg.jpg);
+}
+
+.ps3 {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/ps_adv_bg.jpg);
+}
 
 
 /* -------Graphic design Tutorial Ended------ */
@@ -829,35 +1322,43 @@ tr:hover{
 
 /* -------Video Editing Tutorial Started------ */
 
-.veHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/veHeader.jpg);
+.veHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/veHeader.jpg);
 }
-.ppr{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/ppr_bg.jpg); }
-.afe{ background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/after_effect_bg.jpg); }
+
+.ppr {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/ppr_bg.jpg);
+}
+
+.afe {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/after_effect_bg.jpg);
+}
+
 
 /* -------Video Editing Tutorial Ended------ */
 
 
 /*--------- 1stop page started ------------*/
 
-.oneHstop{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/oneStop.jpg);
+.oneHstop {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/oneStop.jpg);
 }
 
-.OneForm{
+.OneForm {
     margin-top: 50px;
     box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     padding: 30px;
 }
-.directMail{
+
+.directMail {
     margin: 0 auto;
     padding: 120px;
     text-align: center;
     box-sizing: border-box;
-
 }
-.directMail p{
+
+.directMail p {
     color: black;
     text-align: justify;
     font-size: 16px;
@@ -865,55 +1366,87 @@ tr:hover{
     text-align: center;
 }
 
+
 /*--------- 1stop page ended ------------*/
 
 
 /* --------Course Design Started--------- */
 
-.sub-header p{
+.sub-header p {
     text-align: center;
     color: #fff;
     margin-top: 15px;
     font-size: 18px;
 }
-.cHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/CourseHeader.jpg);
+
+.Sem1st {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/1stSemHeader.jpg);
     margin-bottom: 30px;
 }
-.facRow{
+
+.Sem2nd {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/2ndSemHeader.jpg);
+    margin-bottom: 30px;
+}
+
+.Sem3rd {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/3rdSemHeader.jpg);
+    margin-bottom: 30px;
+}
+
+.Sem4th {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/4thSemHeader.jpg);
+    margin-bottom: 30px;
+}
+
+.sem5th {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/5thSemHeader.jpg);
+    margin-bottom: 30px;
+}
+
+.facRow {
     width: 24%;
     margin-right: 1%;
+    background: #fff;
     /* box-shadow: 0 0 5px #ccc; */
 }
-.facRow h3{
+
+.facRow h3 {
     margin: 10px auto;
     text-align: center;
 }
-.matRow{
+
+.matRow {
     width: 75%;
 }
-.matRow p{
+
+.matRow p {
     margin: 10px 0 0 5px;
     font-size: 15px;
 }
-.facultyINFO{
+
+.facultyINFO {
     text-align: center;
 }
-.facRow h2{
+
+.facRow h2 {
     text-align: center;
 }
-.facIMG img{
+
+.facIMG img {
     width: 100px;
     border: 3px solid #ccc;
     border-radius: 30px;
 }
-.crsRow{
+
+.crsRow {
     border: 1px solid #ccc;
     border-radius: 15px;
     float: left;
     padding: 0 20px 50px 20px;
 }
-.crsCol h2{
+
+.crsCol h2 {
     color: #ffff;
     background: #001B48;
     border-radius: 5px;
@@ -923,7 +1456,8 @@ tr:hover{
     font-size: 20px;
     margin: 50px 0 10px 5px;
 }
-.crsMat{
+
+.crsMat {
     float: left;
     box-shadow: 1px 1px 2px #ccc;
     border: 1px solid #ccc;
@@ -932,12 +1466,14 @@ tr:hover{
     padding: 10px;
     width: 32%;
     transition: 0.3s;
-    background:#F6F6F6;
+    background: #fff;
 }
-.crsMat:hover{
+
+.crsMat:hover {
     transform: scale(1.02);
 }
-.crsMat a{
+
+.crsMat a {
     margin-left: 4%;
     width: 83%;
     text-decoration: none;
@@ -945,32 +1481,159 @@ tr:hover{
     font-size: 14px;
     font-weight: 350;
     line-height: 18px;
-
     /* border: 1px solid; */
 }
-.pdfICO{
+
+.pdfICO {
     width: 13%;
     /* background: #f79b94; */
 }
-.crsMat .pdfICO .fas{
+
+.crsMat .pdfICO .fas {
     font-size: 38px;
-    color: #CA0708;
+    /* color: #CA0708; */
+    color: #f44336;
 }
-.matEle{
+
+.crsMat .pdfICO .fa-link {
+    font-size: 30px;
+}
+
+.matEle {
     float: left;
 }
-.crsELink{
+
+.crsELink {
     margin: 30px 0 0 5px;
 }
-.crsRow::after{
-    display: table;
-    content: '';
-    clear: both;
-}
-.crsCol::after{
+
+.crsRow::after {
     display: table;
     content: '';
     clear: both;
 }
 
+.crsCol::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
 /* --------Course Design Ended--------- */
+
+
+/* --------Faculty Info Started--------- */
+
+.facHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/facHeader.jpg);
+}
+
+.facTray {
+    padding-top: 25px;
+}
+
+.facProfile {
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    width: 24%;
+    padding: 15px;
+    text-align: center;
+    min-height: 350px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.facProfile img {
+    width: 90px;
+    margin-top: 20px;
+}
+
+.facProfile h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #001B48;
+}
+
+.facProfile a {
+    text-decoration: none;
+    color: #24292E;
+    font-size: 14px;
+}
+
+.facProfile table {
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.facProfile table tr td {
+    padding: 3px;
+}
+
+.facProfile table tr td i {
+    color: #f44336;
+    width: 25px;
+}
+
+
+/* --------Faculty Info Ended--------- */
+
+
+/* ---------Bus Schedule Started--------- */
+
+.busHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/busHeader.jpg);
+}
+
+.container .busCol {
+    padding: 15px;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.container .busCol h3 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    background: #001B48;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.container .busRoute {
+    width: 25%;
+    margin-right: 1%;
+}
+
+.container .busRoute p {
+    font-size: 13px;
+    color: #000;
+    text-align: justify;
+}
+
+.container .busTime {
+    width: 74%;
+}
+
+.container .busTime table {
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container .busTime table th,
+.container .busTime table td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+}
+
+
+/* ---------Bus Schedule Ended--------- */

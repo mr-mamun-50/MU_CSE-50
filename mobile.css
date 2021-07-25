@@ -1,28 +1,34 @@
-h1{
+h1 {
     font-size: 28px;
 }
 
-nav ul{
+nav ul {
     margin-right: 0px;
     float: left;
     top: 0;
 }
-nav ul li{
+
+nav ul li {
     float: left;
 }
-nav ul li a{
+
+nav ul li a {
     line-height: 40px;
     padding: 0 25px;
 }
-nav .logo{
+
+nav .logo {
     padding-left: 30px;
 }
-nav ul li, nav ul ul li{
+
+nav ul li,
+nav ul ul li {
     display: block;
     width: 100%;
     background: none;
 }
-nav ul ul{
+
+nav ul ul {
     top: 70px;
     position: static;
     border-top: none;
@@ -30,28 +36,33 @@ nav ul ul{
     display: none;
     opacity: 1;
     visibility: visible;
-}    
+}
+
 nav ul ul ul li {
     position: static;
     width: 100%;
 }
-    
-nav ul ul a, nav ul ul li .show {
+
+nav ul ul a,
+nav ul ul li .show {
     padding-left: 60px;
-}    
+}
+
 nav ul ul ul a {
     padding-left: 85px;
 }
 
-nav .fas{
+nav .fas {
     width: 25px;
 }
-nav .fa-caret-down{
+
+nav .fa-caret-down {
     position: absolute;
     right: 30px;
     line-height: 40px;
 }
-.show{
+
+.show {
     display: block;
     color: white;
     font-size: 14px;
@@ -59,13 +70,14 @@ nav .fa-caret-down{
     line-height: 40px;
     cursor: pointer;
 }
-.show:hover{
+
+.show:hover {
     /* color: #ff0a6c; */
     text-shadow: 1px 1px 5px black;
     font-weight: bold;
 }
 
-.icon{
+.icon {
     display: block;
     color: white;
     position: absolute;
@@ -76,148 +88,312 @@ nav .fa-caret-down{
     top: 5px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     box-shadow: none;
 }
 
-.show + a, ul{
+.show+a,
+ul {
     display: none;
 }
 
-[id^=btn]:checked + ul{
+[id^=btn]:checked+ul {
     display: block;
 }
 
-
-.textBox{
+.principle {
     color: #fff;
     text-align: center;
     /* margin-top: 130px;
     margin-left: 55px; */
-    margin: 130px auto;
+    margin: 100px auto;
     width: 250px;
 }
 
-.textBox h1{
-    font-size: 28px;
+.principle h1 {
+    font-size: 30px;
 }
-.textBox p{
+
+.principle p {
     font-size: 13px;
 }
 
-.row{
+@keyframes slide {
+    0% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide1.jpg');
+        background-size: 120%;
+    }
+    25% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide1.jpg');
+        background-size: 100%;
+    }
+    25.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide2.jpg');
+        background-size: 120%;
+    }
+    50% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide2.jpg');
+        background-size: 100%;
+    }
+    50.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide3.jpg');
+        background-size: 120%;
+    }
+    75% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide3.jpg');
+        background-size: 100%;
+    }
+    75.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide4.jpg');
+        background-size: 120%;
+    }
+    100% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide4.jpg');
+        background-size: 100%;
+    }
+}
+
+.row {
     flex-direction: column;
 }
 
-
-.slider .crd, .courseCol{
+.slider .crd,
+.courseCol {
     margin: 10px 5%;
 }
 
+
+/* todays routine started */
+
+.tRoutine {
+    width: 95%;
+}
+
+.tRoutine .crd {
+    width: 47%;
+}
+
+.gradIcon .fa-user-graduate {
+    font-size: 60px;
+}
+
+.tRoutine .crd .cont table {
+    margin: 15px auto 25px auto;
+    width: 90%;
+}
+
+.tRoutine .crd .cont table td {
+    font-size: 13px;
+    padding: 3px 3px;
+}
+
+
+/* todays routine started */
+
+
 /* Call to action section Started */
 
-.cta{
+.cta {
     width: 90%;
     padding: 60px 20px;
+    margin: 30px auto;
 }
-.cta h1{
+
+.cta h1 {
     font-size: 24px;
 }
 
+
 /* Call to action section Ended */
 
-.Feedback{
+
+/* student Statistics */
+
+.stStat {
+    width: 90%;
+}
+
+.statCol {
+    width: 100%;
+    margin-top: 70px;
+    margin-right: 0;
+}
+
+.statCol:last-child {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Feedback {
     width: 90%;
     margin: 0 auto;
 }
 
+
 /* footer section started */
 
-.footer{
-    padding: 30px 7.5%;
-}
-.footer h5{
-    margin-top: 20px;
-}
-.flink{
-    margin-bottom: 20px;
-}
-.gotop .fas{
-    margin-top: 10px;
+.footer {
+    padding: 30px 5%;
+    border-radius: 70px 70px 0 0;
 }
 
-/* footer section ended */
+.footer .fcol {
+    padding-right: 0;
+}
 
-/* contact page started */
+.footer .ftrTopEle {
+    min-height: 0px;
+}
 
-.contactHeader{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contactIMG.jpg);
+.footer .fcol:nth-child(3) {
+    padding-right: 0px;
 }
-.location{
-    width: 90%;
+
+.fcol .icons .fab {
+    margin: 10px 5px 30px 5px;
 }
-.contactUs{
-    width: 90%;
-}
-.contactCol div .fa{
-    font-size: 20px;
-    margin: 5px;
-    margin-right: 20px;
-}
-.contactCol div .far{
-    font-size: 20px;
-    margin: 5px;
-    margin-right: 20px;
-}
-.contactCol div h5{
+
+.footer ol li a {
     font-size: 15px;
 }
 
+.footer ol {
+    margin-bottom: 20px;
+}
+
+.footer .gotop {
+    margin-top: 10px;
+}
+
+
+/* footer section ended */
+
+
+/* contact page started */
+
+.contactHeader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/contactIMG.jpg);
+}
+
+.location {
+    width: 90%;
+}
+
+.contactUs {
+    width: 90%;
+}
+
+.contactCol div .fa {
+    font-size: 20px;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.contactCol div .far {
+    font-size: 20px;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.contactCol div h5 {
+    font-size: 15px;
+}
+
+.aboutUs {
+    width: 90%;
+}
+
+
 /* contact page ended */
+
+.pTable table {
+    width: 90%;
+    font-size: 13px;
+}
 
 [class*="col-"] {
     width: 100%;
 }
 
-.directMail{
+.directMail {
     padding: 30px;
 }
 
-
-.bdR{
+.bdR {
     border-left: none;
     border-top: 0.5px solid gray;
 }
 
-.container{
+.container {
     width: 90%;
 }
 
-
-.facRow{
+.facRow {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
 }
-.matRow{
+
+.matRow {
     width: 100%;
 }
-.crsRow{
+
+.crsRow {
     padding: 0 10px 30px 10px;
 }
-.facultyINFO{
+
+.facultyINFO {
     text-align: center;
     width: 100%;
 }
-.crsMat{
+
+.crsMat {
     width: 46.5%;
 }
-.pdfICO{
-    width: 14%;
+
+.pdfICO {
+    width: 15%;
 }
-.crsMat .pdfICO .fas{
+
+.crsMat .pdfICO .fas {
     font-size: 26px;
 }
-.crsMat a{
-    width: 82%;
+
+.crsMat .pdfICO .fa-link {
+    font-size: 22px;
 }
+
+.crsMat a {
+    width: 81%;
+}
+
+
+/* --------Faculty Info Started--------- */
+
+.facProfile {
+    width: 100%;
+    min-height: fit-content;
+}
+
+
+/* --------Faculty Info Ended--------- */
+
+
+/* ---------Bus Schedule Started--------- */
+
+.container .busRoute {
+    width: 100%;
+}
+
+.container .busTime {
+    width: 100%;
+}
+
+.container .busTime table th,
+.container .busTime table td {
+    padding: 3px;
+    font-size: 13px;
+}
+
+
+/* ---------Bus Schedule Ended--------- */
