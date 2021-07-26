@@ -211,17 +211,13 @@ nav input {
 
 /* -------------Navigation Section Ended --------------*/
 
-.load {
-    animation: slide 2s;
-}
-
 .header {
     background-repeat: no-repeat;
     /* background-size: 120%; */
     background-position: center;
     width: 100%;
     height: 100vh;
-    animation: slide 16s infinite;
+    animation: slide 20s infinite;
 }
 
 .content {
@@ -254,32 +250,40 @@ nav input {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
         background-size: 120%;
     }
-    25% {
+    20% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
         background-size: 100%;
     }
-    25.01% {
+    20.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
         background-size: 120%;
     }
-    50% {
+    40% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
         background-size: 100%;
     }
-    50.01% {
+    40.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
         background-size: 120%;
     }
-    75% {
+    60% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
         background-size: 100%;
     }
-    75.01% {
+    60.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
+        background-size: 120%;
+    }
+    80% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
+        background-size: 100%;
+    }
+    80.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide5.jpg');
         background-size: 120%;
     }
     100% {
-        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide5.jpg');
         background-size: 100%;
     }
 }

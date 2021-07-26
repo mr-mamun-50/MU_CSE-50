@@ -127,6 +127,7 @@ var h1 = [
     "Materials of 50 batch is now together",
     "Best learning place for juniors",
     "Best tutorial collection on various topics",
+    "Get all your results in one click",
     "Welcome to <br>MU CSE 50"
 ];
 var cnt = 0;

@@ -123,32 +123,40 @@ ul {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide1.jpg');
         background-size: 120%;
     }
-    25% {
+    20% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide1.jpg');
         background-size: 100%;
     }
-    25.01% {
+    20.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide2.jpg');
         background-size: 120%;
     }
-    50% {
+    40% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide2.jpg');
         background-size: 100%;
     }
-    50.01% {
+    40.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide3.jpg');
         background-size: 120%;
     }
-    75% {
+    60% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide3.jpg');
         background-size: 100%;
     }
-    75.01% {
+    60.01% {
         background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide4.jpg');
+        background-size: 120%;
+    }
+    80% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide4.jpg');
+        background-size: 100%;
+    }
+    80.01% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide5.jpg');
         background-size: 120%;
     }
     100% {
-        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide4.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/mSlide5.jpg');
         background-size: 100%;
     }
 }
