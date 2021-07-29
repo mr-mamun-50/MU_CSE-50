@@ -294,8 +294,8 @@ nav input {
     color: #fff;
     border: 1.5px solid #f44336;
     border-radius: 10px;
-    padding: 12px;
-    font-size: 13px;
+    padding: 10px 12px;
+    font-size: 13.5px;
     background: #f44336;
     position: relative;
     cursor: pointer;
@@ -733,6 +733,7 @@ nav input {
 
 .footer .fcol .contactCol .heroBtn {
     padding: 5px 10px;
+    font-size: 13px;
 }
 
 .footer p {
@@ -935,6 +936,12 @@ nav input {
     font-weight: 400;
 }
 
+.contactCol div h5 a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+
 .contactCol input,
 .contactCol textarea {
     width: 100%;
@@ -1095,6 +1102,42 @@ textarea {
 
 
 /*--------- Result Record Ended ------------*/
+
+
+/*--------- 1stop page started ------------*/
+
+.oneHstop {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/oneStop.jpg);
+}
+
+.OneForm {
+    margin-top: 50px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.widthBtn {
+    padding: 12px 25px;
+}
+
+.directMail {
+    margin: 0 auto;
+    padding: 120px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.directMail p {
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/*--------- 1stop page ended ------------*/
 
 
 /* -------Programming Tutorial Started------ */
@@ -1339,38 +1382,6 @@ textarea {
 
 
 /* -------Video Editing Tutorial Ended------ */
-
-
-/*--------- 1stop page started ------------*/
-
-.oneHstop {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/oneStop.jpg);
-}
-
-.OneForm {
-    margin-top: 50px;
-    box-shadow: 0 0 10px #ccc;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.directMail {
-    margin: 0 auto;
-    padding: 120px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.directMail p {
-    color: black;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-}
-
-
-/*--------- 1stop page ended ------------*/
 
 
 /* --------Course Design Started--------- */

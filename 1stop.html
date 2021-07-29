@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 968px)">
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
     <!-- Google font link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -194,27 +192,37 @@
 
 
 
+    <!-- Script for form started -->
+
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="OneStopValidator" id="hidden_iframe" style="display: none" onload="oneStopFormLoad()"></iframe>
+
+    <!-- Script for form Ended -->
 
     <!-- form section Started-->
-
 
     <section class="contactUs OneForm">
 
         <div class="row">
 
-            <div class="contactCol">
+            <div class="contactCol msg">
 
                 <h3> Fill this form to mail at 1-Stop service: </h3> <br>
 
-                <form action="mailto:1stop@metrouni.edu.bd" method="post" enctype="text/plain">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefnOhKyA6oW9kUUh3BvbzFrifcFBNPc80DKFF7hJqvul8hhA/formResponse" method="POST" target="OneStopValidator" onsubmit="submitted=true" class="myform" id="myOneForm">
 
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="text" name="id" placeholder="ID" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <textarea rows="5" name="Message" placeholder="Message" required></textarea>
-                    <button type="submit" class="heroBtn" value="Send"> Submit <i class="fas fa-paper-plane"></i>
-                    </button>
+                    <input type="text" name="entry.612053130" placeholder="Name" required>
+                    <input type="text" name="entry.858317991" placeholder="ID" required>
+                    <input type="text" name="entry.1701204176" placeholder="Department" required>
+                    <input type="text" name="entry.1765544853" placeholder="Batch" required>
+                    <input type="email" name="emailAddress" placeholder="Email" required>
+                    <button type="submit" class="heroBtn widthBtn"> Send <i class="fas fa-paper-plane"></i> </button>
                 </form>
+
+                <p id="oneSubMsg"></p>
+                <p id="oneErrMsg"></p>
 
             </div>
 
@@ -222,12 +230,12 @@
 
                 <!-- <div class=""> -->
 
-                    <p> or,<br> If this form doesn't work for you, you can mail to 1-Stop directly from the app </p> <br>
+                <p> or,<br> If you want to send custom mail to 1-Stop, you can click on the 'Open App' below </p> <br>
 
-                    <a href="mailto:1stop@metrouni.edu.bd" class="heroBtn" target="blank"> Open App <i class="fas fa-external-link-alt"></i> </a>
+                <a href="mailto:1stop@metrouni.edu.bd" class="heroBtn" target="blank"> Open App <i class="fas fa-external-link-alt"></i> </a>
 
-                </div>
             </div>
+        </div>
 
         </div>
     </section>
@@ -238,9 +246,10 @@
 
     <!-- Script for form started -->
 
-    <script type="text/javascript">var submitted = false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="formLoad()"></iframe>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
 
     <!-- Script for form Ended -->
 
@@ -251,11 +260,9 @@
         <div class="fcol col-3 ftrTopEle">
             <h4> Feedback </h4>
             <div class="contactCol">
-    
-                <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse"
-                    method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
-    
+
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
+
                     <input type="text" name="entry.805276147" placeholder="Name" required>
                     <input type="email" name="emailAddress" placeholder="Email" required>
                     <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
@@ -269,7 +276,7 @@
         <div class="fcol col-3 ftrTopEle">
 
             <h4>Quick Links</h4>
-            
+
             <ol>
                 <li><a href="https://metrouni.edu.bd" target="blank">Website: Metropolitan University <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">FB/ MU Official Group <i class="fas fa-external-link-alt"></i></a></li>
@@ -282,9 +289,7 @@
 
             <h4>About Us</h4>
 
-            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan
-                University and it is not an official website. Our main purpose is to help our batch and our junior
-                batches through this website.</p><br>
+            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
         </div>
         <div class="fcol col-3 flink ftrTopEle">
 
@@ -295,7 +300,8 @@
                 <a href="#"> <i class="fab fa-instagram"> </i></a>
                 <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
             </div>
-        </div><hr>
+        </div>
+        <hr>
         <div class="fcol col-6">
 
             <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
@@ -312,7 +318,7 @@
     </section>
 
     <!-- Footer section Ended-->
-    
+
     <!-- Linked to javascript file -->
     <script src="index.js"></script>
 
