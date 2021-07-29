@@ -322,6 +322,10 @@ ul {
 
 /* contact page ended */
 
+.OneForm {
+    padding: 15px;
+}
+
 .pTable table {
     width: 90%;
     font-size: 13px;
