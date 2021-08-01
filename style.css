@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #F6F6F6;
+    background: #f8f8f8;
 }
 
 h1 {
@@ -134,27 +134,33 @@ nav ul li a {
     color: white;
     text-decoration: none;
     line-height: 80px;
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px 10px;
-    /* font-family: 'Oswald', sans-serif; */
 }
 
-nav ul li a:hover {
+nav ul li:hover>a {
     border-radius: 5px;
     box-shadow: 0 0 8px #f44336, 0 0 8px #f44336;
 }
 
-nav ul ul li a:hover {
-    /* color: #ff0a6c; */
+nav ul ul li:hover>a {
     box-shadow: none;
-    text-shadow: 1px 1px 5px black;
-    font-weight: bold;
+}
+
+nav ul ul li a:hover {
+    box-shadow: none;
+    border-radius: 0;
+    border-left: 3px solid #f44336;
+}
+
+nav ul ul li:hover {
+    background: #24292E;
 }
 
 nav ul ul {
     position: absolute;
     top: 100px;
-    border-top: 3px solid #f44336;
+    /* border-top: 3px solid #f44336; */
     opacity: 0;
     visibility: hidden;
     transition: top 0.3s;
@@ -166,10 +172,6 @@ nav ul ul li {
     /* background-image: linear-gradient(to left, #ff0a6c, #4a3cdb); */
 }
 
-nav ul ul ul {
-    border-top: none;
-}
-
 nav ul li:hover>ul {
     top: 80px;
     opacity: 1;
@@ -179,21 +181,23 @@ nav ul li:hover>ul {
 nav ul ul li {
     position: relative;
     margin: 0px;
-    width: 160px;
+    width: 150px;
     float: none;
     display: list-item;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    left: -5px;
 }
 
 nav ul ul li a {
-    line-height: 40px;
+    line-height: 37px;
+    transition: 0.1s;
 }
 
 nav ul ul ul li {
     position: relative;
     top: -80px;
-    left: 160px;
-    width: 280px;
+    left: 150px;
+    width: 250px;
 }
 
 .fa-caret-right {
@@ -230,7 +234,7 @@ nav input {
 .principle {
     margin-left: 7.5%;
     width: 43%;
-    margin-top: 7%;
+    margin-top: 17vh;
 }
 
 .principle h1 {
@@ -293,7 +297,7 @@ nav input {
     text-decoration: none;
     color: #fff;
     border: 1.5px solid #f44336;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 10px 12px;
     font-size: 13.5px;
     background: #f44336;
@@ -306,7 +310,7 @@ nav input {
     background: #f44336;
     border-radius: 50px;
     transition: 0.5s;
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 .principle .heroBtn {
@@ -314,7 +318,8 @@ nav input {
 }
 
 .row {
-    margin-top: 2%;
+    width: 85%;
+    margin: 2% auto 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -734,6 +739,7 @@ nav input {
 .footer .fcol .contactCol .heroBtn {
     padding: 5px 10px;
     font-size: 13px;
+    width: 100%;
 }
 
 .footer p {
@@ -835,7 +841,7 @@ nav input {
 }
 
 .sub-header h1 {
-    margin: 6% 20px 20px 20px;
+    margin: 13vh 20px 20px 20px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -896,7 +902,7 @@ nav input {
 }
 
 .contactUs {
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
@@ -946,14 +952,23 @@ nav input {
 .contactCol textarea {
     width: 100%;
     padding: 15px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
+.contactCol input::placeholder,
+.contactCol textarea::placeholder {
+    color: #555;
+}
+
 textarea {
     resize: vertical;
+}
+
+.contactUs .contactCol .heroBtn {
+    margin-top: 7px;
 }
 
 .contactUs .row .msg p {
@@ -1009,7 +1024,7 @@ textarea {
 }
 
 .pTable tr:nth-child(even) {
-    background-color: rgb(233, 233, 233);
+    background-color: #f2f2f2;
 }
 
 .pTable tr:nth-child(odd) {
@@ -1017,7 +1032,7 @@ textarea {
 }
 
 .pTable tr:hover {
-    background-color: #ffb1ac;
+    background: #cee0ff;
 }
 
 .pTable tr td:first-child {
@@ -1075,7 +1090,7 @@ textarea {
 }
 
 .rcard:hover {
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 5px 0px #555;
 }
 
 .rcard .rtxt {
@@ -1092,6 +1107,21 @@ textarea {
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
     font-size: 25px;
+}
+
+.rtxt p {
+    color: #fff;
+    text-align: justify;
+    min-height: 150px;
+}
+
+.rcard hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rcard .heroBtn {
+    width: 90%;
 }
 
 .container::after {
@@ -1115,10 +1145,16 @@ textarea {
     box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     padding: 30px;
+    background: #fff;
+}
+
+.OneForm .heroBtn {
+    margin-bottom: 15px;
 }
 
 .widthBtn {
-    padding: 12px 25px;
+    padding: 10px 25px;
+    width: 100%;
 }
 
 .directMail {
@@ -1174,17 +1210,6 @@ textarea {
 
 .python {
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/python_bg.jpg);
-}
-
-.rtxt p {
-    color: #fff;
-    text-align: justify;
-    min-height: 150px;
-}
-
-.rcard hr {
-    width: 90%;
-    margin: 0 auto;
 }
 
 

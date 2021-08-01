@@ -154,11 +154,20 @@ var h1 = [
     "Get all your results in one click",
     "Welcome to <br>MU CSE 50"
 ];
+var hp = [
+    "Materials of 50 batch is now together",
+    "Best learning place for juniors",
+    "Best tutorial collection on various topics",
+    "Get all your results in one click",
+    "It's a website of 50th batch. Here students of 50th batch will get facilities such as routine, google classroom code, tutorials etc. Moreover, anyone can know about the curricular activities and study materials of 50th batch."
+];
 var cnt = 0;
 var headerH1 = document.getElementById("headerH1");
+var headerP = document.getElementById("headerP");
 
 setInterval(function() {
     headerH1.innerHTML = h1[cnt];
+    headerP.innerHTML = hp[cnt];
     cnt++;
 
     if (cnt >= h1.length) {

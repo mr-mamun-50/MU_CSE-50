@@ -65,16 +65,14 @@ nav .fa-caret-down {
 .show {
     display: block;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0 25px;
     line-height: 40px;
     cursor: pointer;
 }
 
 .show:hover {
-    /* color: #ff0a6c; */
-    text-shadow: 1px 1px 5px black;
-    font-weight: bold;
+    background: #24292E;
 }
 
 .icon {
@@ -88,8 +86,22 @@ nav .fa-caret-down {
     top: 5px;
 }
 
+nav ul li:hover>a {
+    box-shadow: none;
+}
+
 nav ul li a:hover {
     box-shadow: none;
+    color: #f44336;
+}
+
+nav ul ul li a:hover {
+    border-left: none;
+    color: #f44336;
+}
+
+nav ul ul li:hover {
+    color: #f44336;
 }
 
 .show+a,
@@ -106,7 +118,7 @@ ul {
     text-align: center;
     /* margin-top: 130px;
     margin-left: 55px; */
-    margin: 100px auto;
+    margin: 16vh auto;
     width: 250px;
 }
 
@@ -116,6 +128,7 @@ ul {
 
 .principle p {
     font-size: 13px;
+    text-align: justify;
 }
 
 @keyframes slide {
@@ -163,6 +176,7 @@ ul {
 
 .row {
     flex-direction: column;
+    width: 100%;
 }
 
 .slider .crd,
@@ -284,7 +298,7 @@ ul {
 }
 
 .sub-header h1 {
-    margin: 20% 10px 5px 10px;
+    margin: 13vh 10px 5px 10px;
 }
 
 .contactHeader {
@@ -315,16 +329,16 @@ ul {
     font-size: 15px;
 }
 
+.contactCol div h5 a {
+    font-size: 15px;
+}
+
 .aboutUs {
     width: 90%;
 }
 
 
 /* contact page ended */
-
-.OneForm {
-    padding: 15px;
-}
 
 .pTable table {
     width: 90%;
@@ -335,8 +349,13 @@ ul {
     width: 100%;
 }
 
+.OneForm {
+    padding: 15px;
+}
+
 .directMail {
     padding: 30px;
+    border-top: 1px solid #ccc;
 }
 
 .bdR {
