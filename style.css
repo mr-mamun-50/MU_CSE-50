@@ -559,7 +559,7 @@ nav input {
     padding: 10px;
 }
 
-.gradIcon .fa-user-graduate {
+.gradIcon .fa-user-clock {
     font-size: 80px;
     color: #f44336;
     padding: 20px 10px 10px 10px;
@@ -672,7 +672,7 @@ nav input {
     background: #001B48;
     margin-top: 90px;
     padding: 30px 7.5%;
-    border-radius: 130px 130px 0 0;
+    /* border-radius: 130px 130px 0 0; */
 }
 
 .footer .fcol {
