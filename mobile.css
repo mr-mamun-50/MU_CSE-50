@@ -200,13 +200,19 @@ ul {
 }
 
 .tRoutine .crd .cont table {
-    margin: 15px auto 25px auto;
+    margin: 15px auto 10px auto;
     width: 90%;
 }
 
 .tRoutine .crd .cont table td {
     font-size: 13px;
     padding: 3px 3px;
+}
+
+.tRoutine .crd .cont .heroBtn {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -243,6 +249,7 @@ ul {
 
 .statCol:last-child {
     margin-top: 20px;
+    margin-left: 0;
     width: 100%;
 }
 

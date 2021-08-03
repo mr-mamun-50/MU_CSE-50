@@ -561,7 +561,7 @@ nav input {
 
 .gradIcon .fa-user-clock {
     font-size: 80px;
-    color: #f44336;
+    color: #ccc;
     padding: 20px 10px 10px 10px;
 }
 
@@ -571,7 +571,7 @@ nav input {
 
 .tRoutine .crd .cont table {
     width: fit-content;
-    margin: 15px auto 25px auto;
+    margin: 15px auto 10px auto;
     width: 80%;
     border-collapse: collapse;
 }
@@ -585,6 +585,13 @@ nav input {
 
 .timeStyle {
     font-family: 'Oswald', sans-serif;
+}
+
+.tRoutine .crd .cont .heroBtn {
+    margin-top: 0;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px;
 }
 
 .tRoutine .crd:hover {
@@ -613,12 +620,14 @@ nav input {
     float: left;
     width: 40%;
     margin-top: 70px;
-    margin-right: 1%;
+    margin-right: 3%;
+    /* border-right: 1px solid #ccc; */
 }
 
 .statCol:last-child {
     margin-right: 0;
-    width: 59%;
+    margin-left: 3%;
+    width: 54%;
 }
 
 .statCol p {
@@ -639,7 +648,7 @@ nav input {
 /* Call to action section Started */
 
 .cta {
-    margin: 100px auto;
+    margin: 70px auto;
     width: 85%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Call_2_act.jpg);
     background-position: center;
@@ -847,7 +856,7 @@ nav input {
 }
 
 .aboutUs {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 50px;

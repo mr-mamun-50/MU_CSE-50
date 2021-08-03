@@ -1,3 +1,38 @@
+// --------------Homepage header text slider Started--------------------
+
+var h1 = [
+    "Materials of 50 batch is now together",
+    "Best learning place for juniors",
+    "Best tutorial collection on various topics",
+    "Get all your results in one place",
+    "Welcome to <br>MU CSE 50"
+];
+var hp = [
+    "All of the class materials and reference books are available in the website from first semester to ongoing semester, which is easily available here for junior student or any other person.",
+    "Junior students of 50 batches can find study techniques, lectures of different teachers, previous question papers, reference books and tutorials for their advancement on this website.",
+    "Here is a collection of quality tutorials on various topics in computer science. Anyone can develop their skills by following these tutorials.",
+    "Here is a great feature to know the results of the students of Metropolitan University. Also the records of previous results of all the students of 50th batch are kept here.",
+    "It's a website of 50th batch. Here students of 50th batch will get facilities such as course materials, tutorials, routine, google classroom code and other academic facilities. Moreover, anyone can know about the curricular activities and study materials of 50th batch."
+];
+var cnt = 0;
+var headerH1 = document.getElementById("headerH1");
+var headerP = document.getElementById("headerP");
+
+setInterval(function() {
+    headerH1.innerHTML = h1[cnt];
+    headerP.innerHTML = hp[cnt];
+    cnt++;
+
+    if (cnt >= h1.length) {
+        cnt = 0;
+    }
+}, 4000);
+
+// --------------Homepage header text slider ended--------------------
+
+
+// --------------Todays routine view started--------------------
+
 var now = new Date();
 var day = now.getDay();
 
@@ -72,7 +107,12 @@ if (day == 0) {
     document.getElementById("DsecP200").innerHTML = "6:30 PM";
 }
 
+// --------------Todays routine view ended--------------------
 
+
+// -----------------Form handler Started-----------------------
+
+// Feedback form
 
 function formLoad() {
 
@@ -98,6 +138,9 @@ function formLoad() {
     }, 5000);
 }
 
+
+// Contact us form
+
 function contFormLoad() {
 
     var myContForm = document.getElementById("contform");
@@ -121,6 +164,9 @@ function contFormLoad() {
         msgErr.classList.remove("msgErr");
     }, 5000);
 }
+
+
+// OneStop form
 
 function oneStopFormLoad() {
 
@@ -146,56 +192,69 @@ function oneStopFormLoad() {
     }, 5000);
 }
 
-
-var h1 = [
-    "Materials of 50 batch is now together",
-    "Best learning place for juniors",
-    "Best tutorial collection on various topics",
-    "Get all your results in one click",
-    "Welcome to <br>MU CSE 50"
-];
-var hp = [
-    "Materials of 50 batch is now together",
-    "Best learning place for juniors",
-    "Best tutorial collection on various topics",
-    "Get all your results in one click",
-    "It's a website of 50th batch. Here students of 50th batch will get facilities such as routine, google classroom code, tutorials etc. Moreover, anyone can know about the curricular activities and study materials of 50th batch."
-];
-var cnt = 0;
-var headerH1 = document.getElementById("headerH1");
-var headerP = document.getElementById("headerP");
-
-setInterval(function() {
-    headerH1.innerHTML = h1[cnt];
-    headerP.innerHTML = hp[cnt];
-    cnt++;
-
-    if (cnt >= h1.length) {
-        cnt = 0;
-    }
-}, 4000);
+// ---------------------Form handler ended----------------------
 
 
 
 
-google.charts.load("current", { packages: ["corechart"] });
+// ---------------Students statistics started---------------------
+
+google.charts.load("current", {
+    packages: ['corechart']
+});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Skils', 'Percentage of total students'],
-        ['Competitive Programmer', 25],
-        ['Web Developer', 35],
-        ['Android Developer', 10],
-        ['Graphic Designer', 25],
-        ['Others', 5]
+        ['Skills', 'Percentage: ', {
+            role: 'style'
+        }],
+        ['Competitive Programmer ', 25, 'color: #3366CC'],
+        ['Web Developer ', 35, 'color: #DC3912'],
+        ['Android Developer ', 10, 'color: #FF9900'],
+        ['Graphic Designer ', 25, 'color: #109618'],
+        ['Others ', 5, 'color: #990099']
+    ]);
+
+    var view = new google.visualization.DataView(data);
+    view.setColumns([0, 1, {
+            calc: "stringify",
+            sourceColumn: 1,
+            type: "string",
+            role: "annotation"
+        },
+        2
     ]);
 
     var options = {
-        title: 'Statistics at a glance',
-        is3D: true,
-    };
+        // title: "Statistics at a glance",
+        // width: 700,
+        // height: 400,
+        bar: {
+            groupWidth: "50%"
+        },
+        legend: {
+            position: "none"
+        },
+        hAxis: {
+            textStyle: {
+                fontSize: 9.5
+            }
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-    chart.draw(data, options);
+        },
+        chartArea: {
+            left: 18,
+            top: 30,
+            right: 0,
+            bottom: 50
+        },
+        backgroundColor: {
+            'fill': '#f9f9f9',
+            'opacity': 100
+        }
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+    chart.draw(view, options);
 }
+
+// -----------------Students statistics ended-------------------
