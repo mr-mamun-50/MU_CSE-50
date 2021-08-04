@@ -345,7 +345,7 @@ nav input {
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 5%;
-    min-width: 300px;
+    /* min-width: 300px; */
     box-sizing: border-box;
     transition: 0.3s;
 }
@@ -360,7 +360,7 @@ nav input {
 }
 
 .courseCol .cardDesc {
-    padding: 0px 20px 10px 20px;
+    padding: 0px 0px 10px 0px;
     text-align: center;
     line-height: 25px;
     color: #24292E;
@@ -545,7 +545,7 @@ nav input {
     background: #fff;
     box-shadow: 0 0 5px #ccc;
     float: left;
-    margin: 5px 5px;
+    margin: 5px .5%;
     border-radius: 10px;
     width: 24%;
     transition: 0.3s;
