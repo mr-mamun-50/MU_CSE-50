@@ -210,9 +210,9 @@ function drawChart() {
             role: 'style'
         }],
         ['Competitive Programmer ', 25, 'color: #3366CC'],
-        ['Web Developer ', 35, 'color: #DC3912'],
-        ['Android Developer ', 10, 'color: #FF9900'],
-        ['Graphic Designer ', 25, 'color: #109618'],
+        ['Web Developer ', 35, 'color: #109618'],
+        ['Android Developer ', 10, 'color: #DC3912'],
+        ['Graphic Designer ', 25, 'color: #FF9900'],
         ['Others ', 5, 'color: #990099']
     ]);
 
