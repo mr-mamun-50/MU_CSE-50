@@ -141,6 +141,7 @@ nav ul li a {
 nav ul li:hover>a {
     border-radius: 5px;
     box-shadow: 0 0 8px #f44336, 0 0 8px #f44336;
+    color: #f44336;
 }
 
 nav ul ul li:hover>a {
