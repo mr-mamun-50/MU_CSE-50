@@ -631,6 +631,12 @@ nav input {
     width: 54%;
 }
 
+.statCol h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    color: #001B48;
+}
+
 .statCol p {
     margin-top: 20px;
     text-align: justify;
@@ -774,6 +780,10 @@ nav input {
     font-size: 14px;
     font-weight: 300;
     text-align: left;
+}
+
+.footer ol li a:hover {
+    color: #fa6055;
 }
 
 .fcol .icons .fab {
