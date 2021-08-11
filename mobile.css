@@ -341,21 +341,29 @@ ul {
     font-size: 15px;
 }
 
+
+/* contact page ended */
+
 .aboutUs {
     width: 90%;
 }
-
-
-/* contact page ended */
 
 .pTable table {
     width: 90%;
     font-size: 13px;
 }
 
+.pTable .secTable caption {
+    text-align: left;
+    margin-left: 8%;
+}
+
 [class*="col-"] {
     width: 100%;
 }
+
+
+/* ----------Onestop page started---------- */
 
 .OneForm {
     padding: 15px;
@@ -370,6 +378,12 @@ ul {
     border-left: none;
     border-top: 0.5px solid gray;
 }
+
+
+/* ----------Onestop page ended---------- */
+
+
+/* -----------Course pages started------------ */
 
 .container {
     width: 90%;
@@ -421,6 +435,9 @@ ul {
 .crsMat a {
     width: 81%;
 }
+
+
+/* -----------Course pages started------------ */
 
 
 /* --------Faculty Info Started--------- */
